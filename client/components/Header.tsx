@@ -1,8 +1,12 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Header = () => {
+  const navigate = useRouter();
+
   const navlinks = [
     { name: "Home", href: "/" },
     { name: "Who We Are", href: "/who-we-are" },
@@ -10,6 +14,9 @@ const Header = () => {
     { name: "Our History", href: "/our-history" },
     { name: "Future Projects", href: "/future-projects" },
   ];
+
+  const handleClick = () => navigate.push("/contact");
+
   return (
     <nav className="w-full text-stone-600 px-12 py-2 flex justify-between items-center shadow-md rounded-md">
       <Image
@@ -31,7 +38,10 @@ const Header = () => {
         ))}
       </div>
       <div>
-        <button className="px-3 py-2 rounded-lg bg-orange-600 border text-white transition ease-in-out duration-700 border-orange-600 hover:text-orange-600 hover:bg-transparent hover:border-orange-600 cursor-pointer">
+        <button
+          className="px-3 py-2 rounded-lg bg-orange-600 border text-white transition ease-in-out duration-700 border-orange-600 hover:text-orange-600 hover:bg-transparent hover:border-orange-600 cursor-pointer"
+          onClick={handleClick}
+        >
           Contact Us
         </button>
       </div>

@@ -1,7 +1,14 @@
+"use client";
 import ScrollingLogos from "@/components/ScrollingLogos";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const AboutPage = () => {
+  const navigate = useRouter();
+
+  const handleLearnMore = () => navigate.push("/what-we-do");
+  const handleGetInTouch = () => navigate.push("/contact");
+
   return (
     <>
       {/* Hero section for the About page */}
@@ -84,10 +91,16 @@ const AboutPage = () => {
               only effective, but also sustainable.
             </p>
             <div className="space-x-8">
-              <button className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white">
+              <button
+                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+                onClick={handleLearnMore}
+              >
                 Learn More
               </button>
-              <button className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white">
+              <button
+                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+                onClick={handleGetInTouch}
+              >
                 Get In Touch With Us
               </button>
             </div>
@@ -135,10 +148,16 @@ const AboutPage = () => {
             {/* <p className="text-lg">Discover how we can support your mission.</p> */}
           </div>
           <div className="space-x-8">
-            <button className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              onClick={handleLearnMore}
+            >
               Learn More
             </button>
-            <button className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              onClick={handleGetInTouch}
+            >
               Get In Touch With Us
             </button>
           </div>

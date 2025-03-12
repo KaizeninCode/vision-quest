@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
 const HomePage = () => {
+  const navigate = useRouter();
+
   const questions = [
     {
       question: "What services do you offer?",
@@ -31,6 +35,7 @@ const HomePage = () => {
         "You can reach us through our contact page or by email. We encourage inquiries and are happy to discuss your needs. Our team is ready to assist you with any questions.",
     },
   ];
+
   const contactInfo = [
     {
       icon: <MdOutlineMail />,
@@ -47,7 +52,11 @@ const HomePage = () => {
       name: "Office",
       value: "Royal Golf Course, Bagamoyo 48",
     },
-  ]
+  ];
+
+  const handleClick = () => navigate.push("/contact");
+  const handleNavigate = () => navigate.push("/what-we-do");
+
   return (
     <>
       {/*  Hero Section */}
@@ -65,10 +74,16 @@ const HomePage = () => {
               initiatives are impactful and sustainable.
             </p>
             <div className="space-x-8">
-              <button className="p-2 border border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600">
+              <button
+                className="p-2 border border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600"
+                onClick={handleNavigate}
+              >
                 Find Out How
               </button>
-              <button className="p-2 border border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600">
+              <button
+                className="p-2 border border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600"
+                onClick={handleClick}
+              >
                 Get In Touch With Us
               </button>
             </div>
@@ -107,7 +122,10 @@ const HomePage = () => {
               Our research services provide actionable insights to drive
               impactful decisions.
             </p>
-            <button className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600">
+            <button
+              className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600"
+              onClick={handleNavigate}
+            >
               Read More
             </button>
           </div>
@@ -121,7 +139,10 @@ const HomePage = () => {
               We craft strategies that align with your mission and enhance
               effectiveness.
             </p>
-            <button className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600">
+            <button
+              className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600"
+              onClick={handleNavigate}
+            >
               Read More
             </button>
           </div>
@@ -135,7 +156,10 @@ const HomePage = () => {
               Our capacity development iniatives equip teams with the skills
               they need.
             </p>
-            <button className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600">
+            <button
+              className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600"
+              onClick={handleNavigate}
+            >
               Read More
             </button>
           </div>
@@ -156,10 +180,16 @@ const HomePage = () => {
             grounded in solid research and real-world effectiveness.
           </p>
           <div className="space-x-8">
-            <button className="p-2 border border-stone-700 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              className="p-2 border border-stone-700 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              onClick={handleNavigate}
+            >
               Find Out How
             </button>
-            <button className="p-2 border border-stone-700 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white">
+            <button
+              className="p-2 border border-stone-700 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              onClick={handleClick}
+            >
               Get In Touch With Us
             </button>
           </div>
@@ -178,7 +208,9 @@ const HomePage = () => {
         <div className="grid gap-6 w-3/5 mt-16">
           {questions.map((q, i) => (
             <div key={i} className="bg-gray-100 p-4 rounded-lg">
-              <h1 className="text-2xl font-zilla font-bold text-orange-600">{q.question}</h1>
+              <h1 className="text-2xl font-zilla font-bold text-orange-600">
+                {q.question}
+              </h1>
               <p className="text-lg font-vietnam">{q.answer}</p>
             </div>
           ))}
@@ -188,11 +220,10 @@ const HomePage = () => {
       <section className="p-16 flex-1 grid grid-cols-2 gap-48">
         <div className="space-y-8">
           <p className="text-orange-600">Connect</p>
-          <h1 className="text-5xl font-zilla font-bold">
-            Get In Touch
-          </h1>
+          <h1 className="text-5xl font-zilla font-bold">Get In Touch</h1>
           <h3 className="text-lg font-vietnam">
-            We are here to assist you with any questions or inquiries. Reach out to us.
+            We are here to assist you with any questions or inquiries. Reach out
+            to us.
           </h3>
         </div>
         <div className="grid gap-5">

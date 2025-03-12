@@ -5,34 +5,34 @@ import Link from "next/link";
 const Footer = () => {
   const quicklinks = [
     { name: "Home", href: "/" },
-    { name: "Who We Are", href: "/about" },
-    { name: "What We Do", href: "/services" },
-    { name: "Projects", href: "/projects" },
+    { name: "Who We Are", href: "/who-we-are" },
+    { name: "What We Do", href: "/what-we-do" },
+    { name: "Our History", href: "/our-history" },
+    { name: "Future Projects", href: "/future-projects" },
   ];
   return (
     <footer className="grid grid-cols-2 gap-8 py-6 px-12 shadow-lg bg-stone-200">
-      <div className="flex flex-col gap-5 items-start justify-evenly">
-        <Image
-          src={"/logo.png"}
-          alt="Vision Quest Consultants Logo"
-          width={150}
-          height={1000}
-        />
-        <div className="font-vietnam text-lg">
-          <h3>
-            <em>Address</em>
-          </h3>
-          <p>
-            PO Box 45803 - 00100 <br />
-            Royal Golf Course, Bagamoyo 48
-          </p>
+      <div className="grid gap-4">
+        <div className="flex gap-5 items-center justify-center text-stone-500">
+          <Image
+            src={"/logo.png"}
+            alt="Vision Quest Consultants Logo"
+            width={150}
+            height={1000}
+          />
+          <div className="font-vietnam text-md">
+            <p>
+              PO Box 45803 - 00100 <br />
+              Royal Golf Course, Bagamoyo 48
+            </p>
+          </div>
+          <div className="font-vietnam text-md">
+            <p> Mobile: +254735200005</p>
+            <p> Email: info@vqconsultants.com</p>
+          </div>
         </div>
-        <div className="font-vietnam text-lg">
-          <h3>
-            <em>Contact</em>
-          </h3>
-          <p> Mobile: +254735200005</p>
-          <p> Email: info@vqconsultants.com</p>
+        <div>
+          <p className="text-md font-zilla">&copy; Copyright Quest Vision Consultants 2025. All Rights Reserved</p>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-8">
