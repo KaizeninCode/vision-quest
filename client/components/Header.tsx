@@ -7,7 +7,8 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Who We Are", href: "/who-we-are" },
     { name: "What We Do", href: "/what-we-do" },
-    { name: "Projects", href: "/projects" },
+    { name: "Our History", href: "/our-history" },
+    { name: "Future Projects", href: "/future-projects" },
   ];
   return (
     <nav className="w-full text-stone-600 px-12 py-2 flex justify-between items-center shadow-md rounded-md">
