@@ -5,8 +5,8 @@ import React from "react";
 const Header = () => {
   const navlinks = [
     { name: "Home", href: "/" },
-    { name: "Who We Are", href: "/about" },
-    { name: "What We Do", href: "/services" },
+    { name: "Who We Are", href: "/who-we-are" },
+    { name: "What We Do", href: "/what-we-do" },
     { name: "Projects", href: "/projects" },
   ];
   return (

@@ -73,7 +73,7 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-          <div className="rounded-lg size-[100%]" />
+          <div />
         </div>
       </section>
       {/* Second Section on Home Page */}
