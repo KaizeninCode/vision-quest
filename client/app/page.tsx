@@ -187,7 +187,7 @@ const HomePage = () => {
       {/* Get in Touch */}
       <section className="p-16 flex-1 grid grid-cols-2 gap-48">
         <div className="space-y-8">
-          <p>Connect</p>
+          <p className="text-orange-600">Connect</p>
           <h1 className="text-5xl font-zilla font-bold">
             Get In Touch
           </h1>
