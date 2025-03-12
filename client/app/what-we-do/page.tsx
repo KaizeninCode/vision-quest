@@ -132,7 +132,7 @@ const ServicesPage = () => {
               The Learning Hub is born out of our commitment to adaptive
               development and doing development differently. Through strategic
               think and advisory support, we work with development practitioners
-              as they seek to 'do development differently'. We focus on
+              as they seek to &apos;do development differently&apos;. We focus on
               knowledge generation and learning through training, mentorship,
               coaching, experimentation, testing and developing new tools and
               knowledge for adaption and learning in all areas of development
