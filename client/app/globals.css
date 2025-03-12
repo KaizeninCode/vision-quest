@@ -7,12 +7,4 @@
   --font-zilla: Zilla Slab, sans-serif;
 }
 
-@theme {
-  --logo: url('/logo.png')
-}
 
-.logo-background {
-  background-image: var(--logo);
-  background-size: cover;
-  background-position: center;
-}
