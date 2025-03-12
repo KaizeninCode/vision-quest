@@ -60,7 +60,7 @@ const HomePage = () => {
             </h1>
             <p className="text-xl font-vietnam">
               At Vision Quest Consultants, we specialize in providing strategic
-              advisory services tailored to humantarian and development
+              advisory services tailored to humanitarian and development
               challenges. Our evidence-based approach ensures that your
               initiatives are impactful and sustainable.
             </p>
