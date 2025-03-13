@@ -1,3 +1,4 @@
+import MobileNav from "@/components/MobileNav";
 import React from "react";
 
 const HistoryPage = () => {
@@ -95,14 +96,15 @@ const HistoryPage = () => {
   ];
   return (
     <>
+      <MobileNav />
       {/* Hero section */}
-      <section className="flex-1 px-8 w-full h-screen bg-[url(/history2.jpg)] bg-cover bg-center flex items-center justify-center">
-        <div className="grid grid-cols-2 gap-8 w-full h-fit">
+      <section className="flex-1 px-8 lg:w-full min-h-screen bg-[url(/history2.jpg)] bg-cover bg-center flex items-center justify-center">
+        <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
           <div className="p-4 space-y-8 text-white">
-            <h1 className="text-6xl font-zilla font-bold ">
+            <h1 className="lg:text-6xl text-4xl font-zilla font-bold ">
               Our <span className="text-orange-600">History.</span>
             </h1>
-            <p className="text-xl font-vietnam">
+            <p className="lg:text-xl font-vietnam">
               Our services have always enhanced the effectiveness of
               humanitarian efforts. We continue to provide tailored strategies
               that drive impactful change.
@@ -111,14 +113,14 @@ const HistoryPage = () => {
         </div>
       </section>
       {/* first section */}
-      <section className="my-24 p-8 flex-1">
-        <div className="grid grid-cols-2 gap-8 h-fit">
+      <section className="lg:my-24 lg:p-8 p-4 flex-1">
+        <div className="grid lg:grid-cols-2 gap-8 h-fit">
           <div className="flex flex-col justify-center gap-8">
             <>
-              <h1 className="text-4xl font-zilla font-bold text-orange-600">
+              <h1 className="lg:text-4xl text-2xl font-zilla font-bold text-orange-600">
                 Health
               </h1>
-              <p className="text-lg font-vietnam">
+              <p className="lg:text-lg font-vietnam">
                 We envision better health systems that foster quality & access;
                 reduce threats; and promote healthier behaviours to improve
                 lives. Over the years, we have specialised in improving health
@@ -130,10 +132,10 @@ const HistoryPage = () => {
               </p>
             </>
             <>
-              <h1 className="text-4xl font-zilla font-bold text-orange-600">
+              <h1 className="lg:text-4xl text-2xl font-zilla font-bold text-orange-600">
                 Resilience building and economic growth
               </h1>
-              <p className="text-lg font-vietnam">
+              <p className="lg:text-lg font-vietnam">
                 We envision better health systems that foster quality & access;
                 reduce threats; and promote healthier behaviours to improve
                 lives. Over the years, we have specialised in improving health
@@ -145,19 +147,19 @@ const HistoryPage = () => {
               </p>
             </>
           </div>
-          <div className="bg-[url(/history1.jpg)] bg-cover bg-center rounded-lg" />
+          <div className="bg-[url(/history1.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
         </div>
       </section>
       {/* second section */}
-      <section className="p-8 flex-1">
-        <div className="grid grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/history3.jpg)] bg-cover bg-center rounded-lg" />
+      <section className="lg:p-8 p-4 flex-1">
+        <div className="grid lg:grid-cols-2 gap-8 h-fit">
+          <div className="bg-[url(/history3.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
           <div className="flex flex-col justify-center gap-8">
             <>
-              <h1 className="text-4xl font-zilla font-bold text-orange-600">
+              <h1 className="lg:text-4xl text-2xl font-zilla font-bold text-orange-600">
                 Governance
               </h1>
-              <p className="text-lg font-vietnam">
+              <p className="lg:text-lg font-vietnam">
                 VQ&apos;s Governance Sector strengthens accountability and
                 improves government performance by providing technical advice,
                 strategic guidance, and support to public institutions, elected
@@ -180,10 +182,10 @@ const HistoryPage = () => {
               </p>
             </>
             <>
-              <h1 className="text-4xl font-zilla font-bold text-orange-600">
+              <h1 className="lg:text-4xl text-2xl font-zilla font-bold text-orange-600">
                 Gender and Social Inclusion
               </h1>
-              <p className="text-lg font-vietnam">
+              <p className="lg:text-lg font-vietnam">
                 A decade plus of transformative work (research, analysis and
                 project implementation in resource poor settings in Africa) has
                 demonstrated to us that exclusion and gender inequality
@@ -198,9 +200,11 @@ const HistoryPage = () => {
         </div>
       </section>
       {/* table section */}
-      <section className="my-24 p-8 flex-1">
-        <div className="flex flex-col gap-8 items-center justify-center w-3/5 mx-auto h-fit">
-        <h1 className="text-4xl font-zilla text-orange-600 font-extrabold">Key Involvements</h1>
+      <section className="lg:my-24 lg:p-8 p-4 flex-1">
+        <div className="flex flex-col gap-8 items-center justify-center lg:w-3/5 mx-auto h-fit max-md:hidden">
+          <h1 className="text-4xl font-zilla text-orange-600 font-extrabold">
+            Key Involvements
+          </h1>
           <p className="text-lg font-vietnam">
             Over the last five years alone, Vision Quest has been involved in
             some key assignments as shown in the summary table below.
@@ -227,15 +231,15 @@ const HistoryPage = () => {
                       {assignmentIndex === 0 && (
                         <td
                           rowSpan={row.assignments.length}
-                          className="text-lg font-vietnam border border-gray-300 p-3"
+                          className="lg:text-lg font-vietnam border border-gray-300 p-3"
                         >
                           {row.theme}
                         </td>
                       )}
-                      <td className="text-lg font-vietnam border border-gray-300 p-3">
+                      <td className="lg:text-lg font-vietnam border border-gray-300 p-3">
                         {assignment.assignment}
                       </td>
-                      <td className="text-lg font-vietnam border border-gray-300 p-3">
+                      <td className="lg:text-lg font-vietnam border border-gray-300 p-3">
                         {assignment.typeOfSupport}
                       </td>
                     </tr>

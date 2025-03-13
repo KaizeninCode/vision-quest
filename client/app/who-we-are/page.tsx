@@ -1,4 +1,5 @@
 "use client";
+import MobileNav from "@/components/MobileNav";
 import ScrollingLogos from "@/components/ScrollingLogos";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -11,15 +12,16 @@ const AboutPage = () => {
 
   return (
     <>
+      <MobileNav />
       {/* Hero section for the About page */}
-      <section className="flex-1 px-8 w-full h-screen bg-[url(/about1.jpg)] bg-cover bg-center flex items-center justify-center">
-        <div className="grid grid-cols-2 gap-8 w-full h-fit">
+      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/about1.jpg)] bg-cover bg-center flex items-center justify-center">
+        <div className="grid lg:grid-cols-2 gap-8 w-full h-[100%]">
           <div className="p-4 space-y-8 text-white">
-            <h1 className="text-6xl font-zilla font-bold ">
+            <h1 className="lg:text-6xl text-4xl font-zilla font-bold ">
               Empowering Change{" "}
               <span className="text-orange-600">Together.</span>
             </h1>
-            <p className="text-xl font-vietnam">
+            <p className="lg:text-xl text-sm font-vietnam">
               At Vision Quest Consultants, we drive impactful solutions for
               sustainable development across the Global South.
             </p>
@@ -27,19 +29,19 @@ const AboutPage = () => {
         </div>
       </section>
       {/* Second section */}
-      <section className="flex-1 p-8 my-24 flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center w-3/5 gap-8 mx-auto">
-          <h1 className="text-4xl font-zilla font-bold text-center">
+      <section className="flex-1 p-8 lg:my-24 my-8 flex items-center justify-center">
+        <div className="flex flex-col items-center lg:justify-center justify-start lg:w-3/5 gap-8 mx-auto">
+          <h1 className="lg:text-4xl text-xl font-zilla font-bold lg:text-center">
             Empowering Change Through Evidence-Based Solutions for Humanitarian
             and Development Challenges
           </h1>
-          <p className="text-lg font-vietnam">
+          <p className="lg:text-lg font-vietnam">
             At Vision Quest Consultants, we are dedicated to transforming lives
             through strategic insights and innovative appraoches. Our mission is
             to support humanitarian and development actors by providing tailored
             solutions that drive sustainable impact.
           </p>
-          <p className="text-lg font-vietnam">
+          <p className="lg:text-lg font-vietnam">
             Established in 2012, Vision Quest is a leading regional research,
             strategy/capacity development advisory firm that provide
             evidence-based solutions for humanitarian and development actors at
@@ -50,7 +52,7 @@ const AboutPage = () => {
             Zambia, Malawi and Djibouti. Most recently, we have established
             liaison offices in West Africa in Ghana, Liberia and Senegal.
           </p>
-          <p className="text-lg font-vietnam">
+          <p className="lg:text-lg font-vietnam">
             VQ takes pride in its comprehensive understanding of the development
             sector, encompassing both its historical context and prospective
             advancements. For more than a decade, our teams have engaged in
@@ -61,11 +63,11 @@ const AboutPage = () => {
             player, working across different sectors to improve people&apos;s
             lives.
           </p>
-          <p className="text-lg font-vietnam">
-            <span className="text-xl text-orange-600 italic">Our purpose</span>{" "}
+          <p className="lg:text-lg font-vietnam">
+            <span className="lg:text-xl text-orange-600 italic">Our purpose</span>{" "}
             - To make a lasting difference in the Global South.
           </p>
-          <p className="text-lg font-vietnam">
+          <p className="lg:text-lg font-vietnam">
             Creating a lasting difference leads to a better working world, where
             economic growth is both sustainable and inclusive. We are committed
             to continuously improving the quality of all our services by
@@ -78,13 +80,13 @@ const AboutPage = () => {
       </section>
       {/* Third Section */}
       <section className="flex-1 p-8">
-        <div className="grid grid-cols-2 gap-8">
-          <div className="p-4 space-y-8 text-black">
-            <h1 className="text-6xl font-zilla font-bold ">
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div className="lg:p-4 space-y-8 text-black">
+            <h1 className="lg:text-6xl text-2xl font-zilla font-bold ">
               Transforming Insights Into{" "}
               <span className="text-orange-600">Impactful Solutions</span>
             </h1>
-            <p className="text-xl font-vietnam">
+            <p className="lg:text-xl font-vietnam">
               At Vision Quest Consultants, we equip our clients with actionable
               strategies that drive meaningful change. Our evidence-based
               approach ensures that humanitarian and development efforts are not
@@ -92,44 +94,44 @@ const AboutPage = () => {
             </p>
             <div className="space-x-8">
               <button
-                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
                 onClick={handleLearnMore}
               >
                 Learn More
               </button>
               <button
-                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
                 onClick={handleGetInTouch}
               >
-                Get In Touch With Us
+                Contact Us
               </button>
             </div>
           </div>
-          <div className="bg-[url(/about2.jpg)] bg-cover bg-center rounded-lg" />
+          <div className="bg-[url(/about2.jpg)] bg-cover bg-center rounded-lg max-md:hidden" />
         </div>
       </section>
       {/* Achievements */}
-      <section className="my-24 p-8 flex-1">
-        <div className="grid grid-cols-2 gap-16">
-          <h1 className="text-6xl font-bold font-zilla">
+      <section className="lg:my-24 my-8 p-8 flex-1">
+        <div className="grid lg:grid-cols-2 lg:gap-16 gap-4">
+          <h1 className="lg:text-6xl text-2xl font-bold font-zilla">
             Our Achievements in the Global South
           </h1>
           <div className="grid gap-12">
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               At Vision Quest Consultants, we pride ourselves on delivering
               measurable results. Our evidence-based strategies have transformed
               communities and enhanced capacities across the region.
             </p>
             <div className="grid grid-cols-2">
               <div className="grid">
-                <h1 className="text-5xl font-bold font-zilla mb-2">75%</h1>
-                <p className="text-lg">
+                <h1 className="lg:text-5xl text-3xl font-bold font-zilla mb-2">75%</h1>
+                <p className="lg:text-lg text-sm">
                   of projects successfully met or exceeded their objectives.
                 </p>
               </div>
               <div className="grid">
-                <h1 className="text-5xl font-bold font-zilla mb-2">100%</h1>
-                <p className="text-lg">
+                <h1 className="lg:text-5xl text-3xl font-bold font-zilla mb-2">100%</h1>
+                <p className="lg:text-lg text-sm">
                   client satisfaction rate in our recent evaluations.
                 </p>
               </div>
@@ -139,26 +141,25 @@ const AboutPage = () => {
         <ScrollingLogos />
       </section>
       {/* Contact */}
-      <section className="flex-1 p-8 mb-24">
-        <div className="flex justify-center items-center gap-48">
+      <section className="flex-1 p-8 lg:mb-24 mb-8">
+        <div className="flex max-lg:flex-col justify-center items-center lg:gap-48 gap-6">
           <div className="space-y-8">
-            <h1 className="text-5xl font-bold">
+            <h1 className="lg:text-5xl text-2xl font-bold">
               Partner with Vision Quest today.
             </h1>
-            {/* <p className="text-lg">Discover how we can support your mission.</p> */}
           </div>
           <div className="space-x-8">
             <button
-              className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              className="p-2 lg:border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleLearnMore}
             >
               Learn More
             </button>
             <button
-              className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleGetInTouch}
             >
-              Get In Touch With Us
+              Contact Us
             </button>
           </div>
         </div>

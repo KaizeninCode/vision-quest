@@ -1,3 +1,4 @@
+import MobileNav from "@/components/MobileNav";
 import React from "react";
 
 const ServicesPage = () => {
@@ -64,18 +65,22 @@ const ServicesPage = () => {
         "Maintaining a culture of being accountable and responsible.",
     },
     { description: "Investing in our employees at home and in the workplace." },
-    { description: "Investing in people and communities through our business and partnerships." },
+    {
+      description:
+        "Investing in people and communities through our business and partnerships.",
+    },
   ];
   return (
     <>
+      <MobileNav />
       {/* Hero section */}
-      <section className="flex-1 px-8 w-full h-screen bg-[url(/services1.jpg)] bg-cover bg-center flex items-center justify-center">
-        <div className="grid grid-cols-2 gap-8 w-full h-fit">
-          <div className="p-4 space-y-8 text-white">
+      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/services1.jpg)] bg-cover bg-center flex items-center justify-center">
+        <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
+          <div className="lg:p-4 space-y-8 text-white">
             <h1 className="text-6xl font-zilla font-bold ">
               Our Expert <span className="text-orange-600">Services.</span>
             </h1>
-            <p className="text-xl font-vietnam">
+            <p className="lg:text-xl font-vietnam">
               Discover tailored solutions that drive impactful change in
               humanitarian and development sectors worldwide.
             </p>
@@ -83,13 +88,13 @@ const ServicesPage = () => {
         </div>
       </section>
       {/* first service */}
-      <section className="my-24 p-8 flex-1">
-        <div className="grid grid-cols-2 gap-8 h-fit">
+      <section className="lg:my-24 my-8 p-8 flex-1">
+        <div className="grid lg:grid-cols-2 gap-8 h-fit">
           <div className="flex flex-col justify-center gap-8">
             <h1 className="text-4xl font-zilla font-bold text-orange-600">
               Vision Quest Consulting Services
             </h1>
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               We are a leading regional research, strategy, capacity development
               and advisory firm that provides evidence-based solutions for
               humanitarian and development actors at global, regional, national
@@ -122,24 +127,24 @@ const ServicesPage = () => {
       </section>
       {/* second service */}
       <section className="p-8 flex-1">
-        <div className="grid grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/services3.jpg)] bg-cover bg-center rounded-lg" />
+        <div className="grid lg:grid-cols-2 gap-8 h-fit">
+          <div className="bg-[url(/services3.jpg)] bg-cover bg-center rounded-lg h-max-lg:hidden" />
           <div className="flex flex-col justify-center gap-8">
             <h1 className="text-4xl font-zilla font-bold text-orange-600">
               The Vision Quest Learning Hub
             </h1>
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               The Learning Hub is born out of our commitment to adaptive
               development and doing development differently. Through strategic
               think and advisory support, we work with development practitioners
-              as they seek to &apos;do development differently&apos;. We focus on
-              knowledge generation and learning through training, mentorship,
+              as they seek to &apos;do development differently&apos;. We focus
+              on knowledge generation and learning through training, mentorship,
               coaching, experimentation, testing and developing new tools and
               knowledge for adaption and learning in all areas of development
               work, be it work on access to justice, health, education, service
               delivery or democracy. At our Learning Hub, three key elements
               stand out: <br /> <br />
-              <ul className="list-disc pl-8">
+              <ul className="list-disc lg:pl-8 space-y-4">
                 {hubList.map((item, index) => (
                   <li key={index}>
                     <span className="font-bold">{item.title}</span> -{" "}
@@ -152,13 +157,13 @@ const ServicesPage = () => {
         </div>
       </section>
       {/* third service */}
-      <section className="my-24 p-8 flex-1">
-        <div className="grid grid-cols-2 gap-8 h-fit">
+      <section className="lg:my-24 mt-8 p-8 flex-1">
+        <div className="grid lg:grid-cols-2 gap-8 h-fit">
           <div className="flex flex-col justify-center gap-8">
             <h1 className="text-4xl font-zilla font-bold text-orange-600">
               Vision Quest Capital
             </h1>
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               Since we have a long heritage in economic development and
               extensive engagement with frontline development players including
               local communities, governments and non governmental institutions,
@@ -177,7 +182,7 @@ const ServicesPage = () => {
               investment opportunities that promote the achievement of the SDGs
               through:
               <br /> <br />
-              <ul className="list-disc pl-8">
+              <ul className="list-disc lg:pl-8 pl-2">
                 {capitalList.map((item, index) => (
                   <li key={index}>
                     <span className="font-bold">{item.title}</span> -{" "}
@@ -192,11 +197,11 @@ const ServicesPage = () => {
       </section>
       {/* value proposition */}
       <section className="p-8 flex-1">
-        <div className="flex flex-col justify-center gap-8 w-3/5 mx-auto">
-          <h1 className="text-4xl font-zilla font-bold text-orange-600 text-center">
+        <div className="flex flex-col justify-center gap-8 lg:w-3/5 mx-auto">
+          <h1 className="text-4xl font-zilla font-bold text-orange-600 lg:text-center">
             Our Value Proposition
           </h1>
-          <p className="text-lg font-vietnam">
+          <p className="lg:text-lg font-vietnam">
             We bring breakthrough thinking and approaches to help private sector
             and development organizations deliver sustainable outcomes to drive
             effectiveness today and prepare for tomorrow. By tapping into the
@@ -204,7 +209,7 @@ const ServicesPage = () => {
             provide development solutions nearly everywhere our clients need it.
             <br />
             <br />
-            <ul className="list-disc pl-8">
+            <ul className="list-disc lg:pl-8 pl-2">
               {propositionList.map((item, index) => (
                 <li key={index}>
                   <span className="font-bold">{item.title}</span>:{" "}
@@ -216,19 +221,19 @@ const ServicesPage = () => {
         </div>
       </section>
       {/* values */}
-      <section className="my-24 p-8 flex-1">
-        <div className="grid grid-cols-2 gap-8 h-128">
+      <section className="lg:my-24 p-8 flex-1">
+        <div className="grid lg:grid-cols-2 gap-8 h-128">
           <div className="flex flex-col justify-center gap-8">
-            <h1 className="text-5xl font-zilla font-bold text-orange-600">
+            <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
               Our Values and Principles
             </h1>
-            <ul className="text-xl font-vietnam list-disc pl-8">
+            <ul className="lg:text-xl font-vietnam list-disc lg:pl-8 pl-2">
               {valuesList.map((item, index) => (
                 <li key={index}>{item.description}</li>
               ))}
             </ul>
           </div>
-          <div className="bg-[url(/services5.jpg)] bg-cover bg-center rounded-lg" />
+          <div className="bg-[url(/services5.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
         </div>
       </section>
     </>

@@ -1,3 +1,4 @@
+import MobileNav from "@/components/MobileNav";
 import React from "react";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
@@ -109,14 +110,15 @@ const FutureProjectsPage = () => {
 
   return (
     <>
+      <MobileNav />
       {/* Hero section */}
-      <section className="flex-1 px-8 w-full h-screen bg-[url(/future1.jpg)] bg-cover bg-center flex items-center justify-center">
-        <div className="grid grid-cols-2 gap-8 w-full h-fit">
+      <section className="flex-1 px-8 lg:w-full min-h-screen bg-[url(/future1.jpg)] bg-cover bg-center flex items-center justify-center">
+        <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
           <div className="p-4 space-y-8 text-white">
-            <h1 className="text-6xl font-zilla font-bold ">
+            <h1 className="lg:text-6xl text-4xl font-zilla font-bold ">
               Our <span className="text-orange-600">Future Projects.</span>
             </h1>
-            <p className="text-xl font-vietnam">
+            <p className="lg:text-xl font-vietnam">
               See how Vision Quest aims to work with our clients to accelerate
               and scale up development results significantly while tackling
               development challenges facing most of our clients.
@@ -125,12 +127,12 @@ const FutureProjectsPage = () => {
         </div>
       </section>
       {/* description */}
-      <section className="my-24 px-8 flex-1">
-        <div className="flex flex-col gap-8 items-center justify-center w-3/5 mx-auto">
-          <h1 className="text-5xl font-zilla font-bold text-orange-600">
+      <section className="lg:my-24 my-8 lg:px-8 px-4 flex-1">
+        <div className="flex flex-col gap-8 items-center justify-center lg:w-3/5 mx-auto">
+          <h1 className="lg:text-5xl text-2xl font-zilla font-bold text-orange-600">
             Our Future Focus
           </h1>
-          <p className="text-lg font-vietnam">
+          <p className="lg:text-lg font-vietnam">
             The development challenges facing most of our clients today is
             centered around human development - the need to expand people&apos;s
             choices for a fairer, sustainable future, to build the world
@@ -146,7 +148,7 @@ const FutureProjectsPage = () => {
             four broad directions of change:
             <br />
             <br />
-            <ul className="list-disc pl-8">
+            <ul className="list-disc lg:pl-8 pl-4">
               {changesList.map((item, index) => (
                 <li key={index}>
                   <span className="font-bold">{item.title}</span> -{" "}
@@ -158,20 +160,20 @@ const FutureProjectsPage = () => {
         </div>
       </section>
       {/* maximizing impact */}
-      <section className="px-16 flex-1">
-        <div className="grid grid-cols-2 gap-16">
+      <section className="lg:px-16 px-4 flex-1">
+        <div className="grid lg:grid-cols-2 lg:gap-16">
           <div className="space-y-8">
-            <h1 className="text-5xl font-zilla font-bold text-orange-600">
+            <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
               Maximizing Impact: How will VQ deliver?
             </h1>
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               Overall, VQ has begun investing in enabling capacities and
               approaches that can scale up development impact. We will continue
               to support our clients in cultivating and applying these enablers,
               while also embedding them in our own ways of working.
               <br />
               <br />
-              <ul className="list-disc pl-8">
+              <ul className="list-disc lg:pl-8 pl-2 space-y-4">
                 {impactList.map((item, index) => (
                   <li key={index}>
                     <span className="font-bold">{item.title}</span> -{" "}
@@ -181,13 +183,13 @@ const FutureProjectsPage = () => {
               </ul>
             </p>
           </div>
-          <div className="bg-[url(/future2.jpg)] bg-cover bg-center rounded-lg" />
+          <div className="bg-[url(/future2.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
         </div>
       </section>
       {/* description */}
-      <section className="my-24 px-8 flex-1">
-        <div className="flex flex-col gap-8 items-center justify-center w-3/5 mx-auto">
-          <h1 className="text-5xl font-zilla font-bold text-orange-600">
+      <section className="lg:my-24 my-8 lg:px-8 px-2 flex-1">
+        <div className="flex flex-col gap-8 items-center justify-center lg:w-3/5 mx-auto max-md:hidden">
+          <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
             Measuring Progress
           </h1>
           <div className="flex items-center justify-center w-full mx-auto h-fit">
@@ -223,11 +225,13 @@ const FutureProjectsPage = () => {
         </div>
       </section>
       {/* Get in Touch */}
-      <section className="p-16 flex-1 grid grid-cols-2 gap-48">
+      <section className="lg:p-16 p-4 flex-1 grid lg:grid-cols-2 lg:gap-48 gap-4">
         <div className="space-y-8">
-          <p className="text-orange-600">Connect</p>
-          <h1 className="text-5xl font-zilla font-bold">Get In Touch</h1>
-          <h3 className="text-lg font-vietnam">
+          <p>Connect</p>
+          <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
+            Get In Touch
+          </h1>
+          <h3 className="lg:text-lg font-vietnam">
             We are here to assist you with any questions or inquiries. Reach out
             to us.
           </h3>
@@ -237,8 +241,10 @@ const FutureProjectsPage = () => {
             <div key={i} className="flex gap-4 items-center ">
               <div className="p-2 bg-gray-100 rounded-full">{c.icon}</div>
               <div>
-                <h1 className="text-lg font-zilla font-bold">{c.name}</h1>
-                <p className="text-lg font-vietnam">{c.value}</p>
+                <h1 className="text-lg font-zilla font-bold text-orange-600">
+                  {c.name}
+                </h1>
+                <p className="lg:text-lg font-vietnam">{c.value}</p>
               </div>
             </div>
           ))}
