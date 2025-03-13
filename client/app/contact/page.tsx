@@ -34,7 +34,7 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async () => {
     try {
       const data = {
         firstName,
