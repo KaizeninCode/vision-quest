@@ -5,7 +5,7 @@ import dbRoutes from './routes/dbRoutes.js'
 import cors from 'cors'
 import {corsOptions} from './config/corsOptions.js'
 
-// https://vision-quest-backend-pckb.onrender.com -> live on Render
+// backend live on Render => https://vision-quest-backend-pckb.onrender.com
 
 dotenv.config()
 
