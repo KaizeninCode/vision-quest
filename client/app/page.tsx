@@ -4,6 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { useRouter } from "next/navigation";
+import MobileNav from "@/components/MobileNav";
 
 const HomePage = () => {
   const navigate = useRouter();
@@ -59,32 +60,33 @@ const HomePage = () => {
 
   return (
     <>
+      <MobileNav />
       {/*  Hero Section */}
-      <section className="flex-1 px-8 w-full h-screen bg-[url(/home1.jpg)] bg-cover bg-center flex items-center justify-center">
-        <div className="grid grid-cols-2 gap-5 w-full h-fit">
+      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/home1.jpg)] bg-cover bg-center flex items-center justify-center">
+        <div className="lg:grid lg:grid-cols-2 gap-5 w-full h-[100%]">
           <div className="p-4 space-y-8 text-white">
-            <h1 className="text-6xl font-zilla font-bold ">
+            <h1 className="lg:text-6xl md:text-4xl text-3xl font-zilla font-bold ">
               Empowering Development Through{" "}
               <span className="text-orange-600">Evidence-Based Solutions</span>
             </h1>
-            <p className="text-xl font-vietnam">
+            <p className="lg:text-xl md:text-md text-xs font-vietnam">
               At Vision Quest Consultants, we specialize in providing strategic
               advisory services tailored to humanitarian and development
               challenges. Our evidence-based approach ensures that your
               initiatives are impactful and sustainable.
             </p>
-            <div className="space-x-8">
+            <div className="space-x-8 max-lg:flex max-lg:items-center max-lg:justify-start max-lg:gap-2 max-lg:left-0">
               <button
-                className="p-2 border border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600"
+                className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 font-vietnam"
                 onClick={handleNavigate}
               >
                 Find Out How
               </button>
               <button
-                className="p-2 border border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600"
+                className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 font-vietnam"
                 onClick={handleClick}
               >
-                Get In Touch With Us
+                Contact Us
               </button>
             </div>
           </div>
@@ -92,15 +94,15 @@ const HomePage = () => {
         </div>
       </section>
       {/* Second Section on Home Page */}
-      <section className="p-8 flex-1 mt-24">
-        <div className="grid grid-cols-2 gap-8">
+      <section className="p-8 flex-1 lg:mt-24 mt-12">
+        <div className="grid lg:grid-cols-2 lg:gap-8 gap-4">
           <div className="rounded-lg bg-[url(/home2.jpg)] bg-cover bg-center h-96" />
           <div className="space-y-8">
-            <h1 className="text-5xl font-zilla font-bold">
+            <h1 className="lg:text-5xl text-3xl font-zilla font-bold">
               Empowering Humanitarian Efforts With Evidence-Based Solutions for{" "}
               <span className="text-orange-600">Sustainable Development</span>
             </h1>
-            <p className="text-xl font-vietnam">
+            <p className="lg:text-xl text-sm font-vietnam">
               At Vision Quest Consultants, we specialize in providing
               data-driven strategies that empower humanitarian and development
               actors. Our tailored solutions ensure impactful results at every
@@ -110,54 +112,54 @@ const HomePage = () => {
         </div>
       </section>
       {/* Third Section on Home Page */}
-      <section className="p-8 flex-1 mt-24">
-        <div className="grid grid-cols-3 gap-8 px-8 items-center">
-          <div className="flex flex-col gap-6 items-center justify-center p-3 text-center">
+      <section className="p-8 flex-1 lg:mt-24 mt-12">
+        <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 lg:px-8 items-center">
+          <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home3.jpg)] bg-cover bg-center h-96 w-full" />
-            <h1 className="text-3xl font-zilla font-bold">
+            <h1 className="lg:text-3xl text-xl font-zilla font-bold">
               Empowering Organizations With Tailored Capacity Development
               Solutions
             </h1>
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               Our research services provide actionable insights to drive
               impactful decisions.
             </p>
             <button
-              className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600"
+              className="p-2 border-stone-700 uppercase lg:border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600 max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleNavigate}
             >
               Read More
             </button>
           </div>
-          <div className="flex flex-col gap-6 items-center justify-center p-3 text-center">
+          <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home4.jpg)] bg-cover bg-center h-96 w-full" />
-            <h1 className="text-3xl font-zilla font-bold">
+            <h1 className="lg:text-3xl text-xl font-zilla font-bold">
               Strategic Planning for Sustainable Development and Humanitarian
               Impact
             </h1>
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               We craft strategies that align with your mission and enhance
               effectiveness.
             </p>
             <button
-              className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600"
+              className="p-2 border-stone-700 uppercase lg:border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600 max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleNavigate}
             >
               Read More
             </button>
           </div>
-          <div className="flex flex-col gap-6 items-center justify-center p-3 text-center">
+          <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home5.jpg)] bg-cover bg-center h-96 w-full" />
-            <h1 className="text-3xl font-zilla font-bold">
+            <h1 className="lg:text-3xl text-xl font-zilla font-bold">
               Building Capacity for Lasting Change in Communities and
               Organizations
             </h1>
-            <p className="text-lg font-vietnam">
+            <p className="lg:text-lg font-vietnam">
               Our capacity development iniatives equip teams with the skills
               they need.
             </p>
             <button
-              className="p-2 border-stone-700 uppercase border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600"
+              className="p-2 border-stone-700 uppercase lg:border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600 max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleNavigate}
             >
               Read More
@@ -166,13 +168,13 @@ const HomePage = () => {
         </div>
       </section>
       {/* Fourth Section */}
-      <section className="mt-24 p-8 flex-1 grid grid-cols-2 gap-8">
+      <section className="lg:mt-24 p-8 flex-1 grid lg:grid-cols-2 gap-8 ">
         <div className="space-y-8">
-          <h1 className="text-5xl font-zilla font-bold">
+          <h1 className="lg:text-5xl text-3xl font-zilla font-bold">
             Transforming Communities Through{" "}
             <span className="text-orange-600">Evidence-Based Solutions.</span>
           </h1>
-          <p className="text-xl font-vietnam">
+          <p className="lg:text-xl font-vietnam">
             At Vision Quest Consultants, we empower humanitarian and development
             actors by providing tailored strategies that drive sustainable
             change. Our services create significant impacts at global, regional,
@@ -181,47 +183,49 @@ const HomePage = () => {
           </p>
           <div className="space-x-8">
             <button
-              className="p-2 border border-stone-700 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleNavigate}
             >
               Find Out How
             </button>
             <button
-              className="p-2 border border-stone-700 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white"
+              className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleClick}
             >
-              Get In Touch With Us
+              Contact Us
             </button>
           </div>
         </div>
         <div className="rounded-lg bg-[url(/home6.jpg)] bg-cover bg-center h-96" />
       </section>
       {/* FAQs */}
-      <section className="mt-24 p-8 flex-1 flex items-center flex-col justify-center">
-        <h1 className="text-6xl mb-12 text-orange-600 font-zilla font-bold">
+      <section className="lg:mt-24 mt-12 p-8 flex-1 flex items-center flex-col justify-center">
+        <h1 className="lg:text-6xl text-3xl lg:mb-12 mb-6 text-orange-600 font-zilla font-bold">
           FAQs
         </h1>
-        <p className="text-xl font-vietnam">
+        <p className="lg:text-xl font-vietnam mb-8 text-center">
           Find answers to common questions about our services and how we can
           assist you.
         </p>
-        <div className="grid gap-6 w-3/5 mt-16">
+        <div className="grid gap-6 lg:w-3/5 lg:mt-16 mt-8">
           {questions.map((q, i) => (
             <div key={i} className="bg-gray-100 p-4 rounded-lg">
-              <h1 className="text-2xl font-zilla font-bold text-orange-600">
+              <h1 className="lg:text-2xl text-xl font-zilla font-bold text-orange-600">
                 {q.question}
               </h1>
-              <p className="text-lg font-vietnam">{q.answer}</p>
+              <p className="lg:text-lg text-sm font-vietnam">{q.answer}</p>
             </div>
           ))}
         </div>
       </section>
       {/* Get in Touch */}
-      <section className="p-16 flex-1 grid grid-cols-2 gap-48">
+      <section className="lg:p-16 p-8 flex-1 grid lg:grid-cols-2 lg:gap-48 gap-8">
         <div className="space-y-8">
-          <p className="text-orange-600">Connect</p>
-          <h1 className="text-5xl font-zilla font-bold">Get In Touch</h1>
-          <h3 className="text-lg font-vietnam">
+          <p>Connect</p>
+          <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
+            Get In Touch
+          </h1>
+          <h3 className="lg:text-lg font-vietnam">
             We are here to assist you with any questions or inquiries. Reach out
             to us.
           </h3>
@@ -231,8 +235,10 @@ const HomePage = () => {
             <div key={i} className="flex gap-4 items-center ">
               <div className="p-2 bg-gray-100 rounded-full">{c.icon}</div>
               <div>
-                <h1 className="text-lg font-zilla font-bold">{c.name}</h1>
-                <p className="text-lg font-vietnam">{c.value}</p>
+                <h1 className="text-orange-600 text-lg font-zilla font-bold">
+                  {c.name}
+                </h1>
+                <p className="lg:text-lg font-vietnam">{c.value}</p>
               </div>
             </div>
           ))}

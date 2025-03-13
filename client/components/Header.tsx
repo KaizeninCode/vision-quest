@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -18,7 +18,7 @@ const Header = () => {
   const handleClick = () => navigate.push("/contact");
 
   return (
-    <nav className="w-full text-stone-600 px-12 py-2 flex justify-between items-center shadow-md rounded-md">
+    <nav className="max-lg:hidden w-full text-stone-600 px-12 py-2 flex justify-between items-center shadow-md rounded-md">
       <Image
         src={"/logo.png"}
         alt="Vision Quest Consultants Logo"
