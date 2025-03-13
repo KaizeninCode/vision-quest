@@ -90,22 +90,22 @@ const FutureProjectsPage = () => {
   ];
 
   const contactInfo = [
-      {
-        icon: <MdOutlineMail />,
-        name: "Email",
-        value: "info@vqconsultants.com",
-      },
-      {
-        icon: <FiPhone />,
-        name: "Phone",
-        value: "+254735200005",
-      },
-      {
-        icon: <MdOutlineLocationOn />,
-        name: "Office",
-        value: "Royal Golf Course, Bagamoyo 48",
-      },
-    ]
+    {
+      icon: <MdOutlineMail />,
+      name: "Email",
+      value: "info@vqconsultants.com",
+    },
+    {
+      icon: <FiPhone />,
+      name: "Phone",
+      value: "+254735200005",
+    },
+    {
+      icon: <MdOutlineLocationOn />,
+      name: "Office",
+      value: "Royal Golf Course, Bagamoyo 48",
+    },
+  ];
 
   return (
     <>
@@ -226,11 +226,10 @@ const FutureProjectsPage = () => {
       <section className="p-16 flex-1 grid grid-cols-2 gap-48">
         <div className="space-y-8">
           <p className="text-orange-600">Connect</p>
-          <h1 className="text-5xl font-zilla font-bold">
-            Get In Touch
-          </h1>
+          <h1 className="text-5xl font-zilla font-bold">Get In Touch</h1>
           <h3 className="text-lg font-vietnam">
-            We are here to assist you with any questions or inquiries. Reach out to us.
+            We are here to assist you with any questions or inquiries. Reach out
+            to us.
           </h3>
         </div>
         <div className="grid gap-5">
