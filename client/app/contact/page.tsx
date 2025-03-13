@@ -34,7 +34,7 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault(); // Prevent default form submission
     try {
       const data = {
@@ -69,7 +69,7 @@ const ContactPage = () => {
   return (
     <section className="flex-1 p-8 w-full min-h-screen">
       <div className="grid grid-cols-2 gap-8 w-4/5 mx-auto">
-        <form onSubmit={handleSubmit} className="space-y-8">
+        <form className="space-y-8">
           <div className="mb-8">
             <p className="font-vietnam mb-3 text-stone-500">Get in touch</p>
             <h1 className="font-zilla text-orange-600 font-bold text-6xl">
@@ -133,7 +133,7 @@ const ContactPage = () => {
             />
           </div>
           <button
-            type="submit"
+            onClick={handleSubmit}
             className="font-zilla p-2 rounded-lg bg-orange-600 border border-orange-600 text-white transition duration-700 ease-in-out hover:bg-white hover:text-orange-600 hover:cursor-pointer"
           >
             Send Message
