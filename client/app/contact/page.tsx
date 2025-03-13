@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import React, { FormEvent, useState } from "react";
+import React, { useState } from "react";
 
 const ContactPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -34,8 +34,8 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent default form submission
     try {
       const data = {
         firstName,
@@ -44,11 +44,15 @@ const ContactPage = () => {
         phoneNumber,
         message,
       };
-      const r = await axios.post("https://vision-quest-backend-pckb.onrender.com/db/add-to-db", data, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const r = await axios.post(
+        "https://vision-quest-backend-pckb.onrender.com/db/add-to-db",
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       if (r.status === 200) {
         alert("Message sent successfully");
         setFirstName("");
