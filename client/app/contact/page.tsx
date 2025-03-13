@@ -34,7 +34,8 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event: any) => {
+    event.preventDefault()
     try {
       const data = {
         firstName,
