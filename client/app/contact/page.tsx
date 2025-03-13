@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 const ContactPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -9,32 +10,17 @@ const ContactPage = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    switch (name) {
-      case "firstname":
-        setFirstName(value);
-        break;
-      case "lastname":
-        setLastName(value);
-        break;
-      case "email":
-        setEmail(value);
-        break;
-      case "phone":
-        setPhoneNumber(value);
-        break;
-      case "message":
-        setMessage(value);
-        break;
-      default:
-        break;
-    }
-  };
+  const handleFirstNameChange = (e: React.ChangeEvent<HTMLInputElement>) => setFirstName(e.target.value);
+  const handleLastNameChange = (e: React.ChangeEvent<HTMLInputElement>) => setLastName(e.target.value);
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value);
+  const handlePhoneNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => setPhoneNumber(e.target.value);
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLButtonElement>) => {
+  // toast configuration
+  const successNotification = () => toast.success("We've received your message! We'll get back to you soon.")
+  const failureNotification = () => toast.error("Seems like there's a problem. Please try that again.")
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // Prevent default form submission
     try {
       const data = {
@@ -53,14 +39,14 @@ const ContactPage = () => {
           },
         }
       );
-      if (r.status === 200) {
-        alert("Message sent successfully");
+      if (r.status === 201) {
+        successNotification();
         setFirstName("");
         setLastName("");
         setEmail("");
         setPhoneNumber("");
         setMessage("");
-      }
+      } else failureNotification()
     } catch (error) {
       console.log(error);
     }
@@ -69,7 +55,7 @@ const ContactPage = () => {
   return (
     <section className="flex-1 p-8 w-full min-h-screen">
       <div className="grid grid-cols-2 gap-8 w-4/5 mx-auto">
-        <form className="space-y-8">
+        <form onSubmit={handleSubmit} className="space-y-8">
           <div className="mb-8">
             <p className="font-vietnam mb-3 text-stone-500">Get in touch</p>
             <h1 className="font-zilla text-orange-600 font-bold text-6xl">
@@ -84,8 +70,9 @@ const ContactPage = () => {
                 id="fname"
                 className="border-b border-stone-500 w-[100%] p-3 outline-0 font-zilla"
                 placeholder="First Name"
-                onChange={handleChange}
+                onChange={handleFirstNameChange}
                 value={firstName}
+                required
               />
             </div>
             <div className="flex flex-col justify-center items-start w-full">
@@ -95,8 +82,9 @@ const ContactPage = () => {
                 id="lname"
                 className="border-b border-stone-500 w-[100%] p-3 outline-0 font-zilla"
                 placeholder="Last Name"
-                onChange={handleChange}
+                onChange={handleLastNameChange}
                 value={lastName}
+                required
               />
             </div>
           </div>
@@ -107,8 +95,9 @@ const ContactPage = () => {
               id="email"
               className="border-b border-stone-500 w-[100%] p-3 outline-0 font-zilla"
               placeholder="email@example.com"
-              onChange={handleChange}
+              onChange={handleEmailChange}
               value={email}
+              required
             />
           </div>
           <div className="flex flex-col justify-center items-start w-full">
@@ -118,8 +107,9 @@ const ContactPage = () => {
               id="phone"
               className="border-b border-stone-500 w-[100%] p-3 outline-0 font-zilla"
               placeholder="+1-234-567890"
-              onChange={handleChange}
+              onChange={handlePhoneNumberChange}
               value={phoneNumber}
+              required
             />
           </div>
           <div className="flex flex-col justify-center items-start w-full">
@@ -128,16 +118,20 @@ const ContactPage = () => {
               id="message"
               className="border-b border-stone-500 w-[100%] p-3 outline-0 font-zilla"
               placeholder="Your message here"
-              onChange={handleChange}
+              onChange={handleMessageChange}
               value={message}
+              required
             />
           </div>
+          <>
           <button
-            onClick={handleSubmit}
+            type="submit"
             className="font-zilla p-2 rounded-lg bg-orange-600 border border-orange-600 text-white transition duration-700 ease-in-out hover:bg-white hover:text-orange-600 hover:cursor-pointer"
           >
             Send Message
           </button>
+          <ToastContainer position="bottom-left"/>
+          </>
         </form>
         <div className="grid grid-rows-16 grid-cols-8 gap-5">
           <div className="bg-[url(/contact1.jpg)] bg-cover bg-center row-span-8 col-span-5 rounded-xl transition duration-1000 hover:scale-101" />
