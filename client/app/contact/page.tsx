@@ -43,7 +43,7 @@ const ContactPage = () => {
         phoneNumber,
         message,
       };
-      const r = await axios.post("http://localhost:4000/db/add-to-db", data, {
+      const r = await axios.post("https://vision-quest-backend-pckb.onrender.com/db/add-to-db", data, {
         headers: {
           "Content-Type": "application/json",
         },
