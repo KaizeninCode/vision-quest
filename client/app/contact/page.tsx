@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 
 const ContactPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -34,7 +34,7 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     try {
       const data = {
