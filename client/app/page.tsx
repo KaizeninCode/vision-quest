@@ -66,8 +66,8 @@ const HomePage = () => {
         <div className="lg:grid lg:grid-cols-2 gap-5 w-full h-[100%]">
           <div className="p-4 space-y-8 text-white">
             <h1 className="lg:text-6xl md:text-4xl text-3xl font-zilla font-bold ">
-              Empowering Development Through{" "}
-              <span className="text-orange-600">Evidence-Based Solutions</span>
+            Making a lasting difference{" "}
+              <span className="text-orange-600">in the Global South.</span>
             </h1>
             <p className="lg:text-xl md:text-md text-xs font-vietnam">
             VQ takes pride in its comprehensive understanding of the development sector, encompassing both its historical context and prospective advancements.  

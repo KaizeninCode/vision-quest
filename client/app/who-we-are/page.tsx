@@ -36,9 +36,9 @@ const AboutPage = () => {
       <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/about1.jpg)] bg-cover bg-center flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-8 w-full h-[100%]">
           <div className="p-4 space-y-8 text-white">
-            <h1 className="lg:text-6xl text-4xl font-zilla font-bold ">
-              Empowering Change{" "}
-              <span className="text-orange-600">Together.</span>
+            <h1 className="text-6xl font-zilla font-bold ">
+              About{" "}
+              <span className="text-orange-600">Vision Quest.</span>
             </h1>
             <p className="lg:text-xl text-sm font-vietnam">
               At Vision Quest Consultants, we are dedicated to transforming

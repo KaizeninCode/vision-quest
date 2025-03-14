@@ -69,7 +69,7 @@ const ContactPage = () => {
             <div className="mb-8">
               <p className="font-vietnam mb-3 text-stone-500">Get in touch</p>
               <h1 className="font-zilla text-orange-600 font-bold lg:text-6xl text-3xl">
-                Together, we create possibilities
+                Creating a lasting impact in the Global South
               </h1>
             </div>
             <div className="flex justify-center lg:gap-8 gap-4">

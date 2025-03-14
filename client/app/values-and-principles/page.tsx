@@ -58,7 +58,7 @@ const ValuesAndPrinciplesPage = () => {
     <>
       <MobileNav />
       {/* Hero section */}
-      <section className="flex-1 px-8 lg:w-full min-h-screen bg-[url(/values2.jpg)] bg-cover bg-center flex items-center justify-center">
+      <section className="flex-1 px-8 lg:w-full min-h-screen bg-[url(/values1.jpg)] bg-cover bg-center flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
           <div className="p-4 space-y-8 text-white">
             <h1 className="lg:text-6xl text-4xl font-zilla font-bold ">
