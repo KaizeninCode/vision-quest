@@ -127,7 +127,7 @@ const HomePage = () => {
               impactful decisions.
             </p>
             <button
-              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
+              className="p-2 border border-orange-600 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Read More
@@ -144,7 +144,7 @@ const HomePage = () => {
               effectiveness.
             </p>
             <button
-              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
+              className="p-2 border border-orange-600  cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Read More
@@ -161,7 +161,7 @@ const HomePage = () => {
               they need.
             </p>
             <button
-              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
+              className="p-2 border border-orange-600  cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Read More
@@ -185,13 +185,13 @@ const HomePage = () => {
           </p>
           <div className="space-x-8 font-vietnam">
             <button
-              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
+              className="p-2 border border-orange-600  cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Find Out How
             </button>
             <button
-              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
+              className="p-2 border border-orange-600  cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleClick}
             >
               Contact Us
