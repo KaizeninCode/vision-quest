@@ -25,7 +25,7 @@ const MobileNav = () => {
       {/* add icon here */}
       <div className="text-stone-500" onClick={toggleMenu}> &#9776;</div>
       {/* menu overlay */}
-      <div id='menu' className="transition duration-700 ease-in-out hidden absolute right-0 top-0 p-4 bg-stone-200 rounded-lg shadow-lg w-1/2 h-fit mt-16 mr-8">
+      <div id='menu' className="transition duration-1000 ease-in-out hidden absolute right-0 top-0 p-4 bg-stone-200 rounded-lg shadow-lg w-1/2 h-fit mt-16 mr-8 font-vietnam">
         <ul className="flex flex-col gap-4">
           {navlinks.map((link, i) => (
             <Link

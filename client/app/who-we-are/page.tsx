@@ -94,13 +94,13 @@ const AboutPage = () => {
             </p>
             <div className="space-x-8">
               <button
-                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
+                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white font-vietnam"
                 onClick={handleLearnMore}
               >
                 Learn More
               </button>
               <button
-                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
+                className="p-2 border border-orange-600 text-orange-600 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white font-vietnam"
                 onClick={handleGetInTouch}
               >
                 Contact Us
@@ -125,13 +125,13 @@ const AboutPage = () => {
             <div className="grid grid-cols-2">
               <div className="grid">
                 <h1 className="lg:text-5xl text-3xl font-bold font-zilla mb-2">75%</h1>
-                <p className="lg:text-lg text-sm">
+                <p className="lg:text-lg text-sm font-vietnam">
                   of projects successfully met or exceeded their objectives.
                 </p>
               </div>
               <div className="grid">
                 <h1 className="lg:text-5xl text-3xl font-bold font-zilla mb-2">100%</h1>
-                <p className="lg:text-lg text-sm">
+                <p className="lg:text-lg text-sm font-vietnam">
                   client satisfaction rate in our recent evaluations.
                 </p>
               </div>
@@ -142,13 +142,13 @@ const AboutPage = () => {
       </section>
       {/* Contact */}
       <section className="flex-1 p-8 lg:mb-24 mb-8">
-        <div className="flex max-lg:flex-col justify-center items-center lg:gap-48 gap-6">
+        <div className="flex max-lg:flex-col lg:justify-center justify-start items-center lg:gap-48 gap-6">
           <div className="space-y-8">
             <h1 className="lg:text-5xl text-2xl font-bold">
               Partner with Vision Quest today.
             </h1>
           </div>
-          <div className="space-x-8">
+          <div className="space-x-8 font-vietnam">
             <button
               className="p-2 lg:border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleLearnMore}
@@ -156,7 +156,7 @@ const AboutPage = () => {
               Learn More
             </button>
             <button
-              className="p-2 border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
+              className="p-2 lg:border border-stone-500 text-stone-500 rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 hover:text-white max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleGetInTouch}
             >
               Contact Us

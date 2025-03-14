@@ -35,9 +35,9 @@ const Footer = () => {
           <p className="max-lg:text-sm font-zilla text-stone-500 max-lg:text-center">&copy; Copyright Quest Vision Consultants 2025. All Rights Reserved</p>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 mx-auto">
         <div className="flex flex-col lg:gap-5 gap-2 items-start justify-center font-vietnam text-md">
-          <h3 className="uppercase font-extrabold text-orange-600">
+          <h3 className="uppercase font-extrabold text-orange-600 font-zilla">
             Quick Links
           </h3>
           {quicklinks.map((link, i) => (
