@@ -9,6 +9,7 @@ const Footer = () => {
     { name: "What We Do", href: "/what-we-do" },
     { name: "Our History", href: "/our-history" },
     { name: "Future Projects", href: "/future-projects" },
+    { name: "Contact Us", href: "/contact" },
   ];
   return (
     <footer className="grid lg:grid-cols-2 gap-8 py-6 px-12 shadow-lg bg-stone-200">
@@ -20,19 +21,21 @@ const Footer = () => {
             width={150}
             height={1000}
           />
-          <div className="font-vietnam max-lg:text-sm">
+          <div className="font-vietnam max-lg:text-sm px-1">
             <p>
-              PO Box 45803 - 00100 <br />
-              Royal Golf Course, Bagamoyo 48
+              PO Box 45803 - 00100
             </p>
+              <p>Royal Golf Course, Bagamoyo 48</p>
           </div>
           <div className="font-vietnam max-lg:text-sm">
-            <p>Mobile: +254735200005</p>
+            <p> Mobile: +254735200005</p>
             <p>Email: info@vqconsultants.com</p>
           </div>
         </div>
         <div>
-          <p className="max-lg:text-sm font-zilla text-stone-500 max-lg:text-center">&copy; Copyright Quest Vision Consultants 2025. All Rights Reserved</p>
+          <p className="max-lg:text-sm font-zilla text-stone-500 max-lg:text-center">
+            &copy; Copyright Quest Vision Consultants 2025. All Rights Reserved
+          </p>
         </div>
       </div>
       <div className="grid md:grid-cols-2 gap-8 mx-auto">

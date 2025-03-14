@@ -99,8 +99,14 @@ const ServicesPage = () => {
               and advisory firm that provides evidence-based solutions for
               humanitarian and development actors at global, regional, national
               and local levels. <br /> <br /> Our range of work here covers four
-              key growth areas: organization change and development; social
-              development; economic development; environment and climate change.
+              key growth areas:{" "}
+              <span className="text-orange-600">
+                {" "}
+                organization change and development, social development,
+                economic development, environment and climate change
+              </span>
+              . <br />
+              <br />
               In each of these growth areas we undertake project design and
               development, grant management, research, measurement and
               evaluations including third party monitoring, strategy and
@@ -122,13 +128,13 @@ const ServicesPage = () => {
               undertake initial workloads at the consultant&apos;s cost.
             </p>
           </div>
-          <div className="bg-[url(/services2.jpg)] bg-cover bg-center rounded-lg" />
+          <div className="bg-[url(/services2.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
         </div>
       </section>
       {/* second service */}
       <section className="p-8 flex-1">
         <div className="grid lg:grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/services3.jpg)] bg-cover bg-center rounded-lg h-max-lg:hidden" />
+          <div className="bg-[url(/services3.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
           <div className="flex flex-col justify-center gap-8">
             <h1 className="text-4xl font-zilla font-bold text-orange-600">
               The Vision Quest Learning Hub
@@ -137,17 +143,18 @@ const ServicesPage = () => {
               The Learning Hub is born out of our commitment to adaptive
               development and doing development differently. Through strategic
               think and advisory support, we work with development practitioners
-              as they seek to &apos;do development differently&apos;. We focus
-              on knowledge generation and learning through training, mentorship,
-              coaching, experimentation, testing and developing new tools and
-              knowledge for adaption and learning in all areas of development
-              work, be it work on access to justice, health, education, service
-              delivery or democracy. At our Learning Hub, three key elements
-              stand out: <br /> <br />
-              <ul className="list-disc lg:pl-8 space-y-4">
+              as they seek to &apos;do development differently&apos;. <br />
+              <br />
+              We focus on knowledge generation and learning through training,
+              mentorship, coaching, experimentation, testing and developing new
+              tools and knowledge for adaption and learning in all areas of
+              development work, be it work on access to justice, health,
+              education, service delivery or democracy. At our Learning Hub,
+              three key elements stand out: <br /> <br />
+              <ul className="list-disc lg:pl-8 pl-4 space-y-4">
                 {hubList.map((item, index) => (
                   <li key={index}>
-                    <span className="font-bold">{item.title}</span> -{" "}
+                    <span className="font-bold text-orange-600">{item.title}</span> -{" "}
                     {item.description}
                   </li>
                 ))}
@@ -182,17 +189,17 @@ const ServicesPage = () => {
               investment opportunities that promote the achievement of the SDGs
               through:
               <br /> <br />
-              <ul className="list-disc lg:pl-8 pl-2">
+              <ul className="list-disc lg:pl-8 pl-4 space-y-4">
                 {capitalList.map((item, index) => (
                   <li key={index}>
-                    <span className="font-bold">{item.title}</span> -{" "}
+                    <span className="font-bold text-orange-600">{item.title}</span> -{" "}
                     {item.description}
                   </li>
                 ))}
               </ul>
             </p>
           </div>
-          <div className="bg-[url(/services4.jpg)] bg-cover bg-center rounded-lg" />
+          <div className="bg-[url(/services4.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
         </div>
       </section>
       {/* value proposition */}
@@ -209,10 +216,10 @@ const ServicesPage = () => {
             provide development solutions nearly everywhere our clients need it.
             <br />
             <br />
-            <ul className="list-disc lg:pl-8 pl-2">
+            <ul className="list-disc lg:pl-8 pl-4 space-y-8">
               {propositionList.map((item, index) => (
                 <li key={index}>
-                  <span className="font-bold">{item.title}</span>:{" "}
+                  <span className="font-bold text-orange-600">{item.title}</span>:{" "}
                   {item.description}
                 </li>
               ))}
@@ -227,7 +234,7 @@ const ServicesPage = () => {
             <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
               Our Values and Principles
             </h1>
-            <ul className="lg:text-xl font-vietnam list-disc lg:pl-8 pl-2">
+            <ul className="lg:text-xl font-vietnam list-disc lg:pl-8 pl-4 space-y-4">
               {valuesList.map((item, index) => (
                 <li key={index}>{item.description}</li>
               ))}

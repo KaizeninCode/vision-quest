@@ -113,7 +113,7 @@ const HistoryPage = () => {
         </div>
       </section>
       {/* first section */}
-      <section className="lg:my-24 lg:p-8 p-4 flex-1">
+      <section className="lg:my-24 p-8 flex-1">
         <div className="grid lg:grid-cols-2 gap-8 h-fit">
           <div className="flex flex-col justify-center gap-8">
             <>
@@ -123,12 +123,15 @@ const HistoryPage = () => {
               <p className="lg:text-lg font-vietnam">
                 We envision better health systems that foster quality & access;
                 reduce threats; and promote healthier behaviours to improve
-                lives. Over the years, we have specialised in improving health
-                security and systems, health equity and private sector
-                engagement using our diverse expertise and unique ways of
-                working. We have also specialised in analysing and understanding
-                market systems, developing and strengthening partnerships and
-                creating innovative finance models.
+                lives. <br />
+                <br />
+                Over the years, we have specialised in improving health security
+                and systems, health equity and private sector engagement using
+                our diverse expertise and unique ways of working. <br />
+                <br />
+                We have also specialised in analysing and understanding market
+                systems, developing and strengthening partnerships and creating
+                innovative finance models.
               </p>
             </>
             <>
@@ -136,14 +139,22 @@ const HistoryPage = () => {
                 Resilience building and economic growth
               </h1>
               <p className="lg:text-lg font-vietnam">
-                We envision better health systems that foster quality & access;
-                reduce threats; and promote healthier behaviours to improve
-                lives. Over the years, we have specialised in improving health
-                security and systems, health equity and private sector
-                engagement using our diverse expertise and unique ways of
-                working. We have also specialised in analysing and understanding
-                market systems, developing and strengthening partnerships and
-                creating innovative finance models.
+                Our work in resilience building and economic growth brings
+                together the right mix of industry dynamics to unleash broad and
+                inclusive growth. <br />
+                <br />
+                We focus on sustainability, and building on the fundamental
+                belief that small enterprises, youth and farmers play vital
+                roles in market systems at the heart of developing economies.{" "}
+                <br />
+                <br />
+                We work to improve market access, forge links between formal and
+                non-formal players, enhance workforce productivity, expand
+                access to finance, and boost local value. <br />
+                <br />
+                We have also undertaken assignments that addressed food
+                insecurity by championing sustainable solutions that lead to
+                resilient and sustainable livelihoods.
               </p>
             </>
           </div>
@@ -151,9 +162,9 @@ const HistoryPage = () => {
         </div>
       </section>
       {/* second section */}
-      <section className="lg:p-8 p-4 flex-1">
+      <section className="p-8 flex-1">
         <div className="grid lg:grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/history3.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
+          <div className="bg-[url(/history3.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
           <div className="flex flex-col justify-center gap-8">
             <>
               <h1 className="lg:text-4xl text-2xl font-zilla font-bold text-orange-600">
@@ -163,22 +174,25 @@ const HistoryPage = () => {
                 VQ&apos;s Governance Sector strengthens accountability and
                 improves government performance by providing technical advice,
                 strategic guidance, and support to public institutions, elected
-                bodies, and citizens. Based on a thorough understanding of the
-                incentives, interests, and political economy inherent to policy
-                development and implementation, we have continued to supply
-                tailored solutions to policy makers, citizen leaders, and
-                elected representatives. <br />
+                bodies, and citizens. <br />
+                <br />
+                Based on a thorough understanding of the incentives, interests,
+                and political economy inherent to policy development and
+                implementation, we have continued to supply tailored solutions
+                to policy makers, citizen leaders, and elected representatives.{" "}
+                <br />
                 <br />
                 Our approach to governance has also helped identify and foster
                 engagement between citizens and their government, recognizing
                 that both the supply and demand for good governance is necessary
                 to initiate change. In doing so, we have also empowered leaders,
                 recognizing that locally led solutions have the greatest
-                potential for sustainability. Through our partnerships, we have
-                harnessed convening power to actively bring together
-                governments, key humanitarian and development actors to support
-                open dialogue around complexities faced in fragile and
-                conflict-affected countries.
+                potential for sustainability. <br />
+                <br />
+                Through our partnerships, we have harnessed convening power to
+                actively bring together governments, key humanitarian and
+                development actors to support open dialogue around complexities
+                faced in fragile and conflict-affected countries.
               </p>
             </>
             <>
@@ -189,11 +203,13 @@ const HistoryPage = () => {
                 A decade plus of transformative work (research, analysis and
                 project implementation in resource poor settings in Africa) has
                 demonstrated to us that exclusion and gender inequality
-                consistently go hand in hand. And that societies that lag
+                consistently go hand in hand and that societies that lag
                 furthest behind are those where laws and traditions hinder
-                gender equality and women&apos;s empowerment. Our theory of
-                change is based on our experience that achieving gender equality
-                and women&apos;s empowerement require transformative change.
+                gender equality and women&apos;s empowerment. <br />
+                <br />
+                Our theory of change is based on our experience that achieving
+                gender equality and women&apos;s empowerment requires
+                transformative change.
               </p>
             </>
           </div>

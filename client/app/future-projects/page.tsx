@@ -41,7 +41,7 @@ const FutureProjectsPage = () => {
     {
       title: "Investing in our human capital ",
       description:
-        "We have learned that the combination of huge investment in innovation capability and execution discipline makes us stand out from the rest. We have people who have exceptionally deep knowledge in each of the different areas you can think of. Our consulting teams have the ability to pull all of that capability together and mix those skills to serve a client. When we go to market with our consultants today, they have an array of skills and tools that defeine features of the modern consultant tools and mindset.",
+        "We have learned that the combination of huge investment in innovation capability and execution discipline makes us stand out from the rest. We have people who have exceptionally deep knowledge in each of the different areas you can think of. Our consulting teams have the ability to pull all of that capability together and mix those skills to serve a client. When we go to market with our consultants today, they have an array of skills and tools that define features of the modern consultant tools and mindset.",
     },
   ];
 
@@ -112,10 +112,10 @@ const FutureProjectsPage = () => {
     <>
       <MobileNav />
       {/* Hero section */}
-      <section className="flex-1 px-8 lg:w-full min-h-screen bg-[url(/future1.jpg)] bg-cover bg-center flex items-center justify-center">
+      <section className="flex-1 p-8 lg:w-full min-h-screen bg-[url(/future1.jpg)] bg-cover bg-center flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
           <div className="p-4 space-y-8 text-white">
-            <h1 className="lg:text-6xl text-4xl font-zilla font-bold ">
+            <h1 className="lg:text-6xl text-5xl font-zilla font-bold ">
               Our <span className="text-orange-600">Future Projects.</span>
             </h1>
             <p className="lg:text-xl font-vietnam">
@@ -127,7 +127,7 @@ const FutureProjectsPage = () => {
         </div>
       </section>
       {/* description */}
-      <section className="lg:my-24 my-8 lg:px-8 px-4 flex-1">
+      <section className="lg:my-24 my-8 p-8 flex-1">
         <div className="flex flex-col gap-8 items-center justify-center lg:w-3/5 mx-auto">
           <h1 className="lg:text-5xl text-2xl font-zilla font-bold text-orange-600">
             Our Future Focus
@@ -137,21 +137,25 @@ const FutureProjectsPage = () => {
             centered around human development - the need to expand people&apos;s
             choices for a fairer, sustainable future, to build the world
             envisioned by global development goals with the planet and people in
-            balance. Over the next five years, Vision Quest will aim to work
-            with our clients to accelerate and scale up development results
+            balance. <br />
+            <br />
+            Over the next five years, Vision Quest will aim to work with our
+            clients to accelerate and scale up development results
             significantly, bringing these goals back within reach and supporting
             change in three directions - structural transformation, particularly
             green, inclusive and digital transitions; inclusive growth, a
             rights-based approach centred on human agency and human development;
             building capable institutions and resilience to respond to systemic
-            uncertainty and risk. We will work with our clients by targeting
-            four broad directions of change:
+            uncertainty and risk. <br />
+            <br />
+            We will work with our clients by targeting four broad directions of
+            change:
             <br />
             <br />
-            <ul className="list-disc lg:pl-8 pl-4">
+            <ul className="list-disc lg:pl-8 pl-4 space-y-4">
               {changesList.map((item, index) => (
                 <li key={index}>
-                  <span className="font-bold">{item.title}</span> -{" "}
+                  <span className="font-bold text-orange-600">{item.title}</span> -{" "}
                   {item.description}
                 </li>
               ))}
@@ -160,8 +164,8 @@ const FutureProjectsPage = () => {
         </div>
       </section>
       {/* maximizing impact */}
-      <section className="lg:px-16 px-4 flex-1">
-        <div className="grid lg:grid-cols-2 lg:gap-16">
+      <section className="lg:px-16 px-8 flex-1">
+        <div className="grid lg:grid-cols-2 lg:gap-16 gap-8">
           <div className="space-y-8">
             <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
               Maximizing Impact: How will VQ deliver?
@@ -173,22 +177,22 @@ const FutureProjectsPage = () => {
               while also embedding them in our own ways of working.
               <br />
               <br />
-              <ul className="list-disc lg:pl-8 pl-2 space-y-4">
+              <ul className="list-disc lg:pl-8 pl-4 space-y-4">
                 {impactList.map((item, index) => (
                   <li key={index}>
-                    <span className="font-bold">{item.title}</span> -{" "}
+                    <span className="font-bold text-orange-600">{item.title}</span> -{" "}
                     {item.description}
                   </li>
                 ))}
               </ul>
             </p>
           </div>
-          <div className="bg-[url(/future2.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
+          <div className="bg-[url(/future2.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
         </div>
       </section>
       {/* description */}
       <section className="lg:my-24 my-8 lg:px-8 px-2 flex-1">
-        <div className="flex flex-col gap-8 items-center justify-center lg:w-3/5 mx-auto max-md:hidden">
+        <div className="flex flex-col gap-8 items-center justify-center lg:w-3/5 mx-auto ">
           <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
             Measuring Progress
           </h1>
@@ -196,10 +200,10 @@ const FutureProjectsPage = () => {
             <table className="w-full border-collapse border border-gray-300">
               <thead>
                 <tr>
-                  <th className="text-2xl font-zilla font-bold text-stone-500 bg-yellow-200 border border-gray-300 p-2">
+                  <th className="lg:text-2xl max-md:text-sm text-lg font-zilla font-bold text-stone-500 bg-orange-300 border border-gray-300 p-2">
                     Driver of Growth
                   </th>
-                  <th className="text-2xl font-zilla font-bold text-stone-500 bg-yellow-200 border border-gray-300 p-2">
+                  <th className="lg:text-2xl max-md:text-sm text-lg font-zilla font-bold text-stone-500 bg-orange-300 border border-gray-300 md:p-2 p-0.5">
                     Progress Indicators
                   </th>
                 </tr>
@@ -207,11 +211,11 @@ const FutureProjectsPage = () => {
               <tbody>
                 {tableData.map((row, rowIndex) => (
                   <tr key={rowIndex}>
-                    <td className="text-lg font-vietnam border border-gray-300 p-2 bg-yellow-100">
+                    <td className="lg:text-lg max-md:text-sm font-zilla text-stone-500 font-bold border border-gray-300 p-2 bg-orange-200">
                       {row.driver}
                     </td>
-                    <td className="text-lg font-vietnam border border-gray-300 p-2">
-                      <ul className="list-disc pl-4">
+                    <td className="lg:text-lg max-md:text-sm font-vietnam border border-gray-300 p-2">
+                      <ul className="list-disc pl-4 space-y-2">
                         {row.indicators.map((indicator, indicatorIndex) => (
                           <li key={indicatorIndex}>{indicator}</li>
                         ))}

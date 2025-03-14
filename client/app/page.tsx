@@ -116,9 +116,11 @@ const HomePage = () => {
         <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 lg:px-8 items-center">
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home3.jpg)] bg-cover bg-center h-96 w-full" />
-            <h1 className="lg:text-3xl text-xl font-zilla font-bold">
-              Empowering Organizations With Tailored Capacity Development
-              Solutions
+            <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
+              Empowering Organizations With <span className="text-orange-600">
+                Tailored Capacity Development
+                Solutions
+              </span>
             </h1>
             <p className="lg:text-lg font-vietnam">
               Our research services provide actionable insights to drive
@@ -133,8 +135,8 @@ const HomePage = () => {
           </div>
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home4.jpg)] bg-cover bg-center h-96 w-full" />
-            <h1 className="lg:text-3xl text-xl font-zilla font-bold">
-              Strategic Planning for Sustainable Development and Humanitarian
+            <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
+              <span className="text-orange-600">Strategic Planning</span> for Sustainable Development and Humanitarian
               Impact
             </h1>
             <p className="lg:text-lg font-vietnam">
@@ -150,7 +152,7 @@ const HomePage = () => {
           </div>
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home5.jpg)] bg-cover bg-center h-96 w-full" />
-            <h1 className="lg:text-3xl text-xl font-zilla font-bold">
+            <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
               Building Capacity for Lasting Change in Communities and
               Organizations
             </h1>
@@ -181,7 +183,7 @@ const HomePage = () => {
             national, and local levels, ensuring that every initiative is
             grounded in solid research and real-world effectiveness.
           </p>
-          <div className="space-x-8">
+          <div className="space-x-8 font-vietnam">
             <button
               className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 max-lg:text-white"
               onClick={handleNavigate}
@@ -221,7 +223,7 @@ const HomePage = () => {
       {/* Get in Touch */}
       <section className="lg:p-16 p-8 flex-1 grid lg:grid-cols-2 lg:gap-48 gap-8">
         <div className="space-y-8">
-          <p>Connect</p>
+          <p className="font-vietnam">Connect</p>
           <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
             Get In Touch
           </h1>
