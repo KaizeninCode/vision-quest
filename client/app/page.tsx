@@ -77,13 +77,13 @@ const HomePage = () => {
             </p>
             <div className="space-x-8 max-lg:flex max-lg:items-center max-lg:justify-start max-lg:gap-2 max-lg:left-0">
               <button
-                className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 font-vietnam"
+                className="p-2 rounded-lg transition ease-in-out duration-700 cursor-pointer hover:bg-white hover:text-orange-600 max-lg:text-xs bg-orange-600 font-vietnam"
                 onClick={handleNavigate}
               >
                 Find Out How
               </button>
               <button
-                className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 font-vietnam"
+                className="p-2 rounded-lg transition ease-in-out duration-700 cursor-pointer hover:text-orange-600 hover:bg-white max-lg:text-xs bg-orange-600 font-vietnam"
                 onClick={handleClick}
               >
                 Contact Us
@@ -127,7 +127,7 @@ const HomePage = () => {
               impactful decisions.
             </p>
             <button
-              className="p-2 border-stone-700 uppercase lg:border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600 max-lg:bg-orange-600 max-lg:text-white"
+              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Read More
@@ -144,7 +144,7 @@ const HomePage = () => {
               effectiveness.
             </p>
             <button
-              className="p-2 border-stone-700 uppercase lg:border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600 max-lg:bg-orange-600 max-lg:text-white"
+              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Read More
@@ -161,7 +161,7 @@ const HomePage = () => {
               they need.
             </p>
             <button
-              className="p-2 border-stone-700 uppercase lg:border rounded-md transition duration-500 ease-in-out hover:border-orange-600 hover:text-white hover:bg-orange-600 max-lg:bg-orange-600 max-lg:text-white"
+              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Read More
@@ -185,13 +185,13 @@ const HomePage = () => {
           </p>
           <div className="space-x-8 font-vietnam">
             <button
-              className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 max-lg:text-white"
+              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleNavigate}
             >
               Find Out How
             </button>
             <button
-              className="p-2 lg:border lg:border-white rounded-lg transition ease-in-out duration-500 cursor-pointer hover:border-orange-600 hover:bg-orange-600 max-lg:text-xs max-lg:bg-orange-600 max-lg:text-white"
+              className="p-2 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleClick}
             >
               Contact Us
