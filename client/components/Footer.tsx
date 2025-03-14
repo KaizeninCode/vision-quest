@@ -7,8 +7,9 @@ const Footer = () => {
     { name: "Home", href: "/" },
     { name: "Who We Are", href: "/who-we-are" },
     { name: "What We Do", href: "/what-we-do" },
+    { name: "Our Values and Principles", href: "/values-and-principles" },
     { name: "Our History", href: "/our-history" },
-    { name: "Future Projects", href: "/future-projects" },
+    { name: "Future Focus", href: "/future-focus" },
     { name: "Contact Us", href: "/contact" },
   ];
   return (

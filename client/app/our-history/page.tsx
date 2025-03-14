@@ -1,97 +1,24 @@
 import MobileNav from "@/components/MobileNav";
 import React from "react";
+import { FiPhone } from "react-icons/fi";
+import { MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
 
 const HistoryPage = () => {
-  const tableData = [
+  const contactInfo = [
     {
-      theme: "Market solutions",
-      assignments: [
-        {
-          assignment:
-            "Health market system analysis. VQ has developed well-honed tools, skills, and in-country experience around the world to analyse market dynamics, failures, and successes to inform systemic change.",
-          typeOfSupport: "Technical Assistance",
-        },
-      ],
+      icon: <MdOutlineMail />,
+      name: "Email",
+      value: "info@vqconsultants.com",
     },
     {
-      theme: "Capacity Development",
-      assignments: [
-        {
-          assignment:
-            "Transformative Capacity Baseline Survey in Mandera, Moyale and Karamoja Cluster (Kenya, Somalia, Ethiopia, South Sudan and Uganda) Labour Market Assessment in Mandera Cluster (Kenya, Somalia and Ethiopia).",
-          typeOfSupport: "Capacity Development",
-        },
-      ],
+      icon: <FiPhone />,
+      name: "Phone",
+      value: "+254735200005",
     },
     {
-      theme: "Socio-Economic Development",
-      assignments: [
-        {
-          assignment:
-            "Diagnostic Assessment on Institutional Arrangements and Infrastructure Implementation Readiness to Inform the Preparation of Garissa Integrated Socio-Economic Development Plan (GISEDP).",
-          typeOfSupport: "Planning",
-        },
-      ],
-    },
-    {
-      theme: "Third Party Monitoring",
-      assignments: [
-        {
-          assignment:
-            "Third Party Monitoring Pilot Project in Sudan. Programme to be covered by the TPM include; Humanitarian Reform Assistance and Resilience Programme (HRAR), Urban Water for Sudan (UW4S), and Sudan Free of Female Genital Mutilation Phase 2 (SFFGM2).",
-          typeOfSupport: "Technical Assistance",
-        },
-      ],
-    },
-    {
-      theme: "Labor Market Assessment",
-      assignments: [
-        {
-          assignment:
-            "Gender Sensitive Comprehensive Labour Market Assessment and Youth Aspiration Study in Somalia.",
-          typeOfSupport: "Technical Assistance",
-        },
-      ],
-    },
-    {
-      theme: "Gender Strategy Development",
-      assignments: [
-        {
-          assignment:
-            "Consultants in the review of the IGAD Strategy including the facilitation of the various Strategy Review Sessions with Division Teams, documentation of the process and key milestones and development of the 2022-2026 Strategy.",
-          typeOfSupport: "Strategy",
-        },
-      ],
-    },
-    {
-      theme: "Research and Evidence Generation",
-      assignments: [
-        {
-          assignment:
-            "Consultants, Gender and Energy Study for the Africa Enterprise Challenge Fund (AECF) commissioned to Practical Action Consulting: VQ led in the study (April-July 2021)/ assignment which involved assessing the gender impacts of AECF’s investment in renewable energy through its challenge fund",
-          typeOfSupport: "Research",
-        },
-      ],
-    },
-    {
-      theme: "Capacity Development",
-      assignments: [
-        {
-          assignment:
-            "Consultants in Development of the Gender Mainstreaming Tool-Kit for  gender focal desks of government ministries departments and agenciesin Somalia",
-          typeOfSupport: "Technical Assistance",
-        },
-      ],
-    },
-    {
-      theme: "Pubic Policy and Programming",
-      assignments: [
-        {
-          assignment:
-            "Techncial Assistance, DFID Rwanda. Mainstreaming Gender on demand assessment and institutional mapping to complete a project design for a new initiative in support of the application of science for the Ministry of Education, technology and innovation in support of national development goals. ",
-          typeOfSupport: "Techncial Assistance",
-        },
-      ],
+      icon: <MdOutlineLocationOn />,
+      name: "Office",
+      value: "Royal Golf Course, Bagamoyo 48",
     },
   ];
   return (
@@ -105,9 +32,7 @@ const HistoryPage = () => {
               Our <span className="text-orange-600">History.</span>
             </h1>
             <p className="lg:text-xl font-vietnam">
-              Our services have always enhanced the effectiveness of
-              humanitarian efforts. We continue to provide tailored strategies
-              that drive impactful change.
+            Our vast experience in convergence areas (gender mainstreaming, monitoring, evaluation and learning, policy analysis and research, conflict sensitive programming and climate change) have remained a critical piece of our strengths and success.
             </p>
           </div>
         </div>
@@ -141,20 +66,17 @@ const HistoryPage = () => {
               <p className="lg:text-lg font-vietnam">
                 Our work in resilience building and economic growth brings
                 together the right mix of industry dynamics to unleash broad and
-                inclusive growth. <br />
-                <br />
-                We focus on sustainability, and building on the fundamental
-                belief that small enterprises, youth and farmers play vital
-                roles in market systems at the heart of developing economies.{" "}
-                <br />
+                inclusive growth. We focus on sustainability, and building on
+                the fundamental belief that small enterprises, youth and farmers
+                play vital roles in market systems at the heart of developing
+                economies. <br />
                 <br />
                 We work to improve market access, forge links between formal and
                 non-formal players, enhance workforce productivity, expand
-                access to finance, and boost local value. <br />
-                <br />
-                We have also undertaken assignments that addressed food
-                insecurity by championing sustainable solutions that lead to
-                resilient and sustainable livelihoods.
+                access to finance, and boost local value. We have also
+                undertaken assignments that addressed food insecurity by
+                championing sustainable solutions that lead to resilient and
+                sustainable livelihoods.
               </p>
             </>
           </div>
@@ -175,12 +97,6 @@ const HistoryPage = () => {
                 improves government performance by providing technical advice,
                 strategic guidance, and support to public institutions, elected
                 bodies, and citizens. <br />
-                <br />
-                Based on a thorough understanding of the incentives, interests,
-                and political economy inherent to policy development and
-                implementation, we have continued to supply tailored solutions
-                to policy makers, citizen leaders, and elected representatives.{" "}
-                <br />
                 <br />
                 Our approach to governance has also helped identify and foster
                 engagement between citizens and their government, recognizing
@@ -215,55 +131,30 @@ const HistoryPage = () => {
           </div>
         </div>
       </section>
-      {/* table section */}
-      <section className="lg:my-24 lg:p-8 p-4 flex-1">
-        <div className="flex flex-col gap-8 items-center justify-center lg:w-3/5 mx-auto h-fit max-md:hidden">
-          <h1 className="text-4xl font-zilla text-orange-600 font-extrabold">
-            Key Involvements
+      {/* Get in Touch */}
+      <section className="lg:p-16 p-4 flex-1 grid lg:grid-cols-2 lg:gap-48 gap-4">
+        <div className="space-y-8">
+          <p>Connect</p>
+          <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
+            Get In Touch
           </h1>
-          <p className="text-lg font-vietnam">
-            Over the last five years alone, Vision Quest has been involved in
-            some key assignments as shown in the summary table below.
-          </p>
-          <table className="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr>
-                <th className="text-2xl font-zilla font-bold text-orange-600 border border-gray-300 p-2">
-                  Theme
-                </th>
-                <th className="text-2xl font-zilla font-bold text-orange-600 border border-gray-300 p-2">
-                  Assignment
-                </th>
-                <th className="text-2xl font-zilla font-bold text-orange-600 border border-gray-300 p-2">
-                  Type of Support
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {tableData.map((row, rowIndex) => (
-                <React.Fragment key={rowIndex}>
-                  {row.assignments.map((assignment, assignmentIndex) => (
-                    <tr key={assignmentIndex}>
-                      {assignmentIndex === 0 && (
-                        <td
-                          rowSpan={row.assignments.length}
-                          className="lg:text-lg font-vietnam border border-gray-300 p-3"
-                        >
-                          {row.theme}
-                        </td>
-                      )}
-                      <td className="lg:text-lg font-vietnam border border-gray-300 p-3">
-                        {assignment.assignment}
-                      </td>
-                      <td className="lg:text-lg font-vietnam border border-gray-300 p-3">
-                        {assignment.typeOfSupport}
-                      </td>
-                    </tr>
-                  ))}
-                </React.Fragment>
-              ))}
-            </tbody>
-          </table>
+          <h3 className="lg:text-lg font-vietnam">
+            We are here to assist you with any questions or inquiries. Reach out
+            to us.
+          </h3>
+        </div>
+        <div className="grid gap-5">
+          {contactInfo.map((c, i) => (
+            <div key={i} className="flex gap-4 items-center ">
+              <div className="p-2 bg-gray-100 rounded-full">{c.icon}</div>
+              <div>
+                <h1 className="text-lg font-zilla font-bold text-orange-600">
+                  {c.name}
+                </h1>
+                <p className="lg:text-lg font-vietnam">{c.value}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </>

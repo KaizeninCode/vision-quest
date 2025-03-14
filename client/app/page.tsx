@@ -70,10 +70,7 @@ const HomePage = () => {
               <span className="text-orange-600">Evidence-Based Solutions</span>
             </h1>
             <p className="lg:text-xl md:text-md text-xs font-vietnam">
-              At Vision Quest Consultants, we specialize in providing strategic
-              advisory services tailored to humanitarian and development
-              challenges. Our evidence-based approach ensures that your
-              initiatives are impactful and sustainable.
+            VQ takes pride in its comprehensive understanding of the development sector, encompassing both its historical context and prospective advancements.  
             </p>
             <div className="space-x-8 max-lg:flex max-lg:items-center max-lg:justify-start max-lg:gap-2 max-lg:left-0">
               <button
@@ -117,14 +114,13 @@ const HomePage = () => {
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home3.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
-              Empowering Organizations With <span className="text-orange-600">
-                Tailored Capacity Development
-                Solutions
-              </span>
+              Vision Quest Consulting 
             </h1>
             <p className="lg:text-lg font-vietnam">
-              Our research services provide actionable insights to drive
-              impactful decisions.
+              We are a leading regional research, strategy, capacity development
+              and advisory firm that provides evidence-based solutions for
+              humanitarian and development actors at global, regional, national
+              and local levels.
             </p>
             <button
               className="p-2 border border-orange-600 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
@@ -136,12 +132,13 @@ const HomePage = () => {
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home4.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
-              <span className="text-orange-600">Strategic Planning</span> for Sustainable Development and Humanitarian
-              Impact
+              The Vision Quest Learning Hub
             </h1>
             <p className="lg:text-lg font-vietnam">
-              We craft strategies that align with your mission and enhance
-              effectiveness.
+              We focus on knowledge generation and learning through training,
+              mentorship, coaching, experimentation, testing and developing new
+              tools and knowledge for adaption and learning in all areas of
+              development work.
             </p>
             <button
               className="p-2 border border-orange-600  cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
@@ -153,12 +150,13 @@ const HomePage = () => {
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home5.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
-              Building Capacity for Lasting Change in Communities and
-              Organizations
+              Vision Quest Capital
             </h1>
             <p className="lg:text-lg font-vietnam">
-              Our capacity development iniatives equip teams with the skills
-              they need.
+              The purpose of Vision Quest Capital is to build on the success of
+              our economic development work across frontier and emerging markets
+              by catalyzing private commercial capital into these markets for
+              impact investment.
             </p>
             <button
               className="p-2 border border-orange-600  cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
@@ -173,7 +171,7 @@ const HomePage = () => {
       <section className="lg:mt-24 p-8 flex-1 grid lg:grid-cols-2 gap-8 ">
         <div className="space-y-8">
           <h1 className="lg:text-5xl text-3xl font-zilla font-bold">
-            Transforming Communities Through{" "}
+            Transforming Lives Through{" "}
             <span className="text-orange-600">Evidence-Based Solutions.</span>
           </h1>
           <p className="lg:text-xl font-vietnam">
@@ -191,7 +189,7 @@ const HomePage = () => {
               Find Out How
             </button>
             <button
-              className="p-2 border border-orange-600  cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
+              className="p-2 border border-orange-600 cursor-pointer rounded-md transition duration-700 ease-in-out hover:text-orange-600 hover:bg-white bg-orange-600 text-white"
               onClick={handleClick}
             >
               Contact Us

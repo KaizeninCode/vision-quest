@@ -1,5 +1,7 @@
 import MobileNav from "@/components/MobileNav";
 import React from "react";
+import { FiPhone } from "react-icons/fi";
+import { MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
 
 const ServicesPage = () => {
   const hubList = [
@@ -56,20 +58,24 @@ const ServicesPage = () => {
     },
   ];
 
-  const valuesList = [
+  const contactInfo = [
     {
-      description: "Belief in our diversity of people, cultures and networks.",
+      icon: <MdOutlineMail />,
+      name: "Email",
+      value: "info@vqconsultants.com",
     },
     {
-      description:
-        "Maintaining a culture of being accountable and responsible.",
+      icon: <FiPhone />,
+      name: "Phone",
+      value: "+254735200005",
     },
-    { description: "Investing in our employees at home and in the workplace." },
     {
-      description:
-        "Investing in people and communities through our business and partnerships.",
+      icon: <MdOutlineLocationOn />,
+      name: "Office",
+      value: "Royal Golf Course, Bagamoyo 48",
     },
   ];
+
   return (
     <>
       <MobileNav />
@@ -81,8 +87,10 @@ const ServicesPage = () => {
               Our Expert <span className="text-orange-600">Services.</span>
             </h1>
             <p className="lg:text-xl font-vietnam">
-              Discover tailored solutions that drive impactful change in
-              humanitarian and development sectors worldwide.
+              The insights and high-quality services we offer help foster trust
+              and confidence in humanity, economies, and their enablers. By
+              doing so, we play a vital role in creating a better working world
+              for our people, clients, and communities.
             </p>
           </div>
         </div>
@@ -95,11 +103,7 @@ const ServicesPage = () => {
               Vision Quest Consulting Services
             </h1>
             <p className="lg:text-lg font-vietnam">
-              We are a leading regional research, strategy, capacity development
-              and advisory firm that provides evidence-based solutions for
-              humanitarian and development actors at global, regional, national
-              and local levels. <br /> <br /> Our range of work here covers four
-              key growth areas:{" "}
+              Our range of work here covers four key growth areas:{" "}
               <span className="text-orange-600">
                 {" "}
                 organization change and development, social development,
@@ -121,11 +125,7 @@ const ServicesPage = () => {
               . At the warehouse, we leverage on our proprietary systems to help
               individual and stand alone consultants to navigate complex tasks
               through administrative and back end support for their assignments
-              at a cost. In this product, we offer legal cover for individual
-              consultants with large tasks by providing support on contracting
-              of project staff, regulatory compliance, project staff recruitment
-              and management as well as pre financing soltuons where required to
-              undertake initial workloads at the consultant&apos;s cost.
+              at a cost.
             </p>
           </div>
           <div className="bg-[url(/services2.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
@@ -145,18 +145,10 @@ const ServicesPage = () => {
               think and advisory support, we work with development practitioners
               as they seek to &apos;do development differently&apos;. <br />
               <br />
-              We focus on knowledge generation and learning through training,
-              mentorship, coaching, experimentation, testing and developing new
-              tools and knowledge for adaption and learning in all areas of
-              development work, be it work on access to justice, health,
-              education, service delivery or democracy. At our Learning Hub,
-              three key elements stand out: <br /> <br />
+              At our Learning Hub, three key elements stand out: <br /> <br />
               <ul className="list-disc lg:pl-8 pl-4 space-y-4">
                 {hubList.map((item, index) => (
-                  <li key={index}>
-                    <span className="font-bold text-orange-600">{item.title}</span> -{" "}
-                    {item.description}
-                  </li>
+                  <li key={index}>{item.title}</li>
                 ))}
               </ul>
             </p>
@@ -171,19 +163,15 @@ const ServicesPage = () => {
               Vision Quest Capital
             </h1>
             <p className="lg:text-lg font-vietnam">
-              Since we have a long heritage in economic development and
-              extensive engagement with frontline development players including
-              local communities, governments and non governmental institutions,
-              we have now added private sector and finance institutions into
-              this fold. <br />
-              <br /> The purpose of Vision Quest Capital is to build on the
-              success of our economic development work across frontier and
-              emerging markets by catalyzing private commercial capital into
-              these markets for impact investment. Our brand and reputation
-              position us as credible financial advisors and intermediaries in
-              these markets, while our technical expertise allows us to add
-              value to promising businesses that are constrained by capacity and
-              capital. <br />
+              The purpose of Vision Quest Capital is to build on the success of
+              our economic development work across frontier and emerging markets
+              by catalyzing private commercial capital into these markets for
+              impact investment. <br />
+              <br />
+              Our brand and reputation position us as credible financial
+              advisors and intermediaries in these markets, while our technical
+              expertise allows us to add value to promising businesses that are
+              constrained by capacity and capital. <br />
               <br /> Our experiences in economic development make Vision Quest
               Capital an ideal partner for private sector institutions seeking
               investment opportunities that promote the achievement of the SDGs
@@ -191,10 +179,7 @@ const ServicesPage = () => {
               <br /> <br />
               <ul className="list-disc lg:pl-8 pl-4 space-y-4">
                 {capitalList.map((item, index) => (
-                  <li key={index}>
-                    <span className="font-bold text-orange-600">{item.title}</span> -{" "}
-                    {item.description}
-                  </li>
+                  <li key={index}>{item.title}</li>
                 ))}
               </ul>
             </p>
@@ -213,34 +198,42 @@ const ServicesPage = () => {
             and development organizations deliver sustainable outcomes to drive
             effectiveness today and prepare for tomorrow. By tapping into the
             best of the VQ ecosystem and syndicated human capital - we can
-            provide development solutions nearly everywhere our clients need it.
+            provide development solutions nearly everywhere our clients need it
+            through:
             <br />
             <br />
-            <ul className="list-disc lg:pl-8 pl-4 space-y-8">
+            <ul className="list-disc lg:pl-8 pl-4 space-y-4">
               {propositionList.map((item, index) => (
-                <li key={index}>
-                  <span className="font-bold text-orange-600">{item.title}</span>:{" "}
-                  {item.description}
-                </li>
+                <li key={index}>{item.title}</li>
               ))}
             </ul>
           </p>
         </div>
       </section>
-      {/* values */}
-      <section className="lg:my-24 p-8 flex-1">
-        <div className="grid lg:grid-cols-2 gap-8 h-128">
-          <div className="flex flex-col justify-center gap-8">
-            <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
-              Our Values and Principles
-            </h1>
-            <ul className="lg:text-xl font-vietnam list-disc lg:pl-8 pl-4 space-y-4">
-              {valuesList.map((item, index) => (
-                <li key={index}>{item.description}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="bg-[url(/services5.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
+      {/* Get in Touch */}
+      <section className="lg:p-16 p-4 flex-1 grid lg:grid-cols-2 lg:gap-48 gap-4">
+        <div className="space-y-8">
+          <p>Connect</p>
+          <h1 className="lg:text-5xl text-3xl font-zilla font-bold text-orange-600">
+            Get In Touch
+          </h1>
+          <h3 className="lg:text-lg font-vietnam">
+            We are here to assist you with any questions or inquiries. Reach out
+            to us.
+          </h3>
+        </div>
+        <div className="grid gap-5">
+          {contactInfo.map((c, i) => (
+            <div key={i} className="flex gap-4 items-center ">
+              <div className="p-2 bg-gray-100 rounded-full">{c.icon}</div>
+              <div>
+                <h1 className="text-lg font-zilla font-bold text-orange-600">
+                  {c.name}
+                </h1>
+                <p className="lg:text-lg font-vietnam">{c.value}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </>

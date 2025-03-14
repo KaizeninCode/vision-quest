@@ -22,8 +22,8 @@ const ScrollingLogos = () => {
   ];
 
   return (
-    <section className="max-lg:hidden my-24 p-8 flex-1">
-      <h1 className="text-4xl font-bold font-zilla text-center mb-8">
+    <section className="max-lg:hidden mt-16 p-8 flex-1">
+      <h1 className="text-4xl font-bold font-zilla text-center mb-8 text-orange-600">
         Our Clients
       </h1>
       <div className="overflow-hidden">
