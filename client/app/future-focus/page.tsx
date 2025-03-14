@@ -27,51 +27,6 @@ const FutureProjectsPage = () => {
     },
   ];
 
-  const tableData = [
-    {
-      driver: "People",
-      indicators: [
-        "Investments in skills, knowledge and workplace experiences that enable employees to reach their full potential",
-        "Building and creating strong and trusting relationships among people",
-      ],
-    },
-    {
-      driver: "Clients",
-      indicators: [
-        "Understanding client needs for integration of their experiences into our products and services",
-        "Improvements in routinely monitoring attraction, retention and expansion of our client portfolio",
-      ],
-    },
-    {
-      driver: "Operations",
-      indicators: [
-        "Increased routine performance measures in operations such as speed, efficiency, and effectiveness",
-        "Flexibility and clarity of workflow processes that align our operations with our strategies",
-      ],
-    },
-    {
-      driver: "Technology",
-      indicators: [
-        "Embracing the use of technology as a support tool for business growth and managing risk",
-        "Investment in digital, technology and data analytics to identify behaviour patterns, trends and competitive landscapes",
-      ],
-    },
-    {
-      driver: "Finance",
-      indicators: [
-        "Employing the best financial management approaches that drive maximum benefits from the management of available financial resources",
-        "Transforming finance functions more strategically and commercially",
-      ],
-    },
-    {
-      driver: "Risk",
-      indicators: [
-        "Early detection and management of risk",
-        "Reduction in volatility in our business",
-      ],
-    },
-  ];
-
   const contactInfo = [
     {
       icon: <MdOutlineMail />,
