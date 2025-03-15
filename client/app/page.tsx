@@ -11,27 +11,27 @@ const HomePage = () => {
 
   const questions = [
     {
-      question: "What services do you offer?",
+      question: "What services do we offer?",
       answer:
         "We offer a range of services to empower humanitarian and development actors, including strategic planning, capacity development, and research services. Our evidence-based solutions are tailored to your needs and designed to drive sustainable change.",
     },
     {
-      question: "How do you work?",
+      question: "How do we work?",
       answer:
         "Our approach is collaborative and participatory, ensuring that stakeholders are engaged throughout the process. We utilize data-driven methodologies to inform our strategies. This ensures that our strategies are relevant and effective.",
     },
     {
-      question: "Who are your clients?",
+      question: "Who are our clients?",
       answer:
         "We serve a diverse range of clients, including NGOs, government agencies, and international organizations. Our expertise is particularly relevant to those operating in the Global South. We tailor our services to meet the unique needs of each client.",
     },
     {
-      question: "What is your methodology?",
+      question: "What is our methodology?",
       answer:
         "Our methodology combines qualitative and quantitative research techniques to gather comprehensive insights. We emphasize stakeholder engagement and iterative feedback to refine our solutions. This ensures our strategies are both practical and impactful.",
     },
     {
-      question: "How can I contact you?",
+      question: "How can you contact us?",
       answer:
         "You can reach us through our contact page or by email. We encourage inquiries and are happy to discuss your needs. Our team is ready to assist you with any questions.",
     },
@@ -96,7 +96,7 @@ const HomePage = () => {
           <div className="rounded-lg bg-[url(/home2.jpg)] bg-cover bg-center h-96" />
           <div className="space-y-8">
             <h1 className="lg:text-5xl text-3xl font-zilla font-bold">
-              Empowering Humanitarian Efforts With Evidence-Based Solutions for{" "}
+              Empowering Humanitarian and Development Actors With Evidence-Based Solutions for{" "}
               <span className="text-orange-600">Sustainable Development</span>
             </h1>
             <p className="lg:text-xl text-sm font-vietnam">

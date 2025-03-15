@@ -84,7 +84,7 @@ const ServicesPage = () => {
         <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
           <div className="lg:p-4 space-y-8 text-white">
             <h1 className="text-6xl font-zilla font-bold ">
-              Our Expert <span className="text-orange-600">Services.</span>
+              Our <span className="text-orange-600">Services.</span>
             </h1>
             <p className="lg:text-xl font-vietnam">
               The insights and high-quality services we offer help foster trust
