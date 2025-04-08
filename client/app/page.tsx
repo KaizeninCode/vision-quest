@@ -69,7 +69,7 @@ const HomePage = () => {
             Making a lasting difference{" "}
               <span className="text-orange-600">in the Global South.</span>
             </h1>
-            <p className="lg:text-xl md:text-md text-xs font-vietnam">
+            <p className="lg:text-xl md:text-lg text-xs font-vietnam">
             VQ takes pride in its comprehensive understanding of the development sector, encompassing both its historical context and prospective advancements.  
             </p>
             <div className="space-x-8 max-lg:flex max-lg:items-center max-lg:justify-start max-lg:gap-2 max-lg:left-0">
