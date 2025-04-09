@@ -110,7 +110,7 @@ const HomePage = () => {
       </section>
       {/* Third Section on Home Page */}
       <section className="p-8 flex-1 lg:mt-24 mt-12">
-        <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 lg:px-8 items-center">
+        <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 lg:px-8 items-center w-fit">
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
             <div className="rounded-lg bg-[url(/home3.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
@@ -129,7 +129,7 @@ const HomePage = () => {
               Read More
             </button>
           </div>
-          <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
+          <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center w-fit">
             <div className="rounded-lg bg-[url(/home4.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
               The Vision Quest Learning Hub
@@ -147,7 +147,7 @@ const HomePage = () => {
               Read More
             </button>
           </div>
-          <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
+          <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center w-fit">
             <div className="rounded-lg bg-[url(/home5.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
               Vision Quest Capital
