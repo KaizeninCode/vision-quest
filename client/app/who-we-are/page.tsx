@@ -33,7 +33,7 @@ const AboutPage = () => {
     <>
       <MobileNav />
       {/* Hero section for the About page */}
-      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/about1.jpg)] bg-cover bg-center flex items-center justify-center">
+      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/vq/6.jpg)] bg-cover bg-center flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-8 w-full h-[100%]">
           <div className="p-4 space-y-8 text-white">
             <h1 className="text-6xl font-zilla font-bold ">
@@ -128,7 +128,7 @@ const AboutPage = () => {
               </button>
             </div>
           </div>
-          <div className="bg-[url(/about2.jpg)] bg-cover bg-center rounded-lg max-md:hidden" />
+          <div className="bg-[url(/vq/7.png)] bg-cover bg-center rounded-lg max-md:hidden" />
         </div>
       </section>
       {/* Achievements */}

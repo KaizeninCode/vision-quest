@@ -80,7 +80,7 @@ const ServicesPage = () => {
     <>
       <MobileNav />
       {/* Hero section */}
-      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/services1.jpg)] bg-cover bg-center flex items-center justify-center">
+      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/vq/1.png)] bg-cover bg-center flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
           <div className="lg:p-4 space-y-8 text-white">
             <h1 className="text-6xl font-zilla font-bold ">
@@ -128,13 +128,13 @@ const ServicesPage = () => {
               at a cost.
             </p>
           </div>
-          <div className="bg-[url(/services2.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
+          <div className="bg-[url(/vq/2.png)] bg-cover bg-center rounded-lg max-lg:h-96" />
         </div>
       </section>
       {/* second service */}
       <section className="p-8 flex-1">
         <div className="grid lg:grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/services3.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
+          <div className="bg-[url(/vq/3.png)] bg-cover bg-center rounded-lg max-lg:h-96" />
           <div className="flex flex-col justify-center gap-8">
             <h1 className="text-4xl font-zilla font-bold text-orange-600">
               The Vision Quest Learning Hub
@@ -184,7 +184,7 @@ const ServicesPage = () => {
               </ul>
             </p>
           </div>
-          <div className="bg-[url(/services4.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
+          <div className="bg-[url(/vq/9.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
         </div>
       </section>
       {/* value proposition */}

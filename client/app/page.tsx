@@ -62,7 +62,7 @@ const HomePage = () => {
     <>
       <MobileNav />
       {/*  Hero Section */}
-      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/home1.jpg)] bg-cover bg-center flex items-center justify-center">
+      <section className="flex-1 px-8 lg:w-full w-screen min-h-screen bg-[url(/vq/15.jpg)] bg-cover bg-center flex items-center justify-center">
         <div className="lg:grid lg:grid-cols-2 gap-5 w-full h-[100%]">
           <div className="p-4 space-y-8 text-white">
             <h1 className="lg:text-6xl md:text-4xl text-3xl font-zilla font-bold ">
@@ -93,7 +93,7 @@ const HomePage = () => {
       {/* Second Section on Home Page */}
       <section className="p-8 flex-1 lg:mt-24 mt-12">
         <div className="grid lg:grid-cols-2 lg:gap-8 gap-4">
-          <div className="rounded-lg bg-[url(/home2.jpg)] bg-cover bg-center h-96" />
+          <div className="rounded-lg bg-[url(/vq/16.jpg)] bg-cover bg-center h-96" />
           <div className="space-y-8">
             <h1 className="lg:text-5xl text-3xl font-zilla font-bold">
               Empowering Humanitarian and Development Actors With Evidence-Based Solutions for{" "}
@@ -110,9 +110,9 @@ const HomePage = () => {
       </section>
       {/* Third Section on Home Page */}
       <section className="p-8 flex-1 lg:mt-24 mt-12">
-        <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 lg:px-8 items-center w-fit">
+        <div className="grid lg:grid-cols-3 lg:gap-8 gap-4 lg:px-8 items-start flex-1">
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center">
-            <div className="rounded-lg bg-[url(/home3.jpg)] bg-cover bg-center h-96 w-full" />
+            <div className="rounded-lg bg-[url(/vq/18.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
               Vision Quest Consulting 
             </h1>
@@ -130,14 +130,14 @@ const HomePage = () => {
             </button>
           </div>
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center w-fit">
-            <div className="rounded-lg bg-[url(/home4.jpg)] bg-cover bg-center h-96 w-full" />
+            <div className="rounded-lg bg-[url(/vq/17.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
               The Vision Quest Learning Hub
             </h1>
             <p className="lg:text-lg font-vietnam">
               We focus on knowledge generation and learning through training,
               mentorship, coaching, experimentation, testing and developing new
-              tools and knowledge for adaption and learning in all areas of
+              tools and knowledge for learning in all areas of
               development work.
             </p>
             <button
@@ -148,7 +148,7 @@ const HomePage = () => {
             </button>
           </div>
           <div className="flex flex-col gap-6 items-center justify-center p-3 lg:text-center w-fit">
-            <div className="rounded-lg bg-[url(/home5.jpg)] bg-cover bg-center h-96 w-full" />
+            <div className="rounded-lg bg-[url(/vq/19.jpg)] bg-cover bg-center h-96 w-full" />
             <h1 className="lg:text-3xl text-xl font-zilla font-bold text-orange-600">
               Vision Quest Capital
             </h1>
@@ -167,7 +167,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      {/* Fourth Section */}
+      {/* Fourth Section
       <section className="lg:mt-24 p-8 flex-1 grid lg:grid-cols-2 gap-8 ">
         <div className="space-y-8">
           <h1 className="lg:text-5xl text-3xl font-zilla font-bold">
@@ -197,7 +197,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="rounded-lg bg-[url(/home6.jpg)] bg-cover bg-center h-96" />
-      </section>
+      </section> */}
       {/* FAQs */}
       <section className="lg:mt-24 mt-12 p-8 flex-1 flex items-center flex-col justify-center">
         <h1 className="lg:text-6xl text-3xl lg:mb-12 mb-6 text-orange-600 font-zilla font-bold">

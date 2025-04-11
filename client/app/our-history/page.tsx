@@ -25,7 +25,7 @@ const HistoryPage = () => {
     <>
       <MobileNav />
       {/* Hero section */}
-      <section className="flex-1 px-8 lg:w-full min-h-screen bg-[url(/history2.jpg)] bg-cover bg-center flex items-center justify-center">
+      <section className="flex-1 px-8 lg:w-full min-h-screen bg-[url(/vq/10.jpg)] bg-cover bg-center flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-8 w-full h-fit">
           <div className="p-4 space-y-8 text-white">
             <h1 className="lg:text-6xl text-4xl font-zilla font-bold ">
@@ -80,13 +80,13 @@ const HistoryPage = () => {
               </p>
             </>
           </div>
-          <div className="bg-[url(/history1.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
+          <div className="bg-[url(/vq/11.png)] bg-cover bg-center rounded-lg max-lg:hidden" />
         </div>
       </section>
       {/* second section */}
       <section className="p-8 flex-1">
         <div className="grid lg:grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/history3.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
+          <div className="bg-[url(/vq/14.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
           <div className="flex flex-col justify-center gap-8">
             <>
               <h1 className="lg:text-4xl text-2xl font-zilla font-bold text-orange-600">
