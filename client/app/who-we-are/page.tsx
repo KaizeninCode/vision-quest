@@ -1,6 +1,6 @@
 "use client";
 import MobileNav from "@/components/MobileNav";
-import ScrollingLogos from "@/components/ScrollingLogos";
+// import ScrollingLogos from "@/components/ScrollingLogos";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { FiPhone } from "react-icons/fi";
