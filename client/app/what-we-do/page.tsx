@@ -134,7 +134,7 @@ const ServicesPage = () => {
       {/* second service */}
       <section className="p-8 flex-1">
         <div className="grid lg:grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/vq/transforming-communities.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
+          <div className="bg-[url(/vq/transforming-communities.JPG)] bg-cover bg-center rounded-lg max-lg:h-96" />
           <div className="flex flex-col justify-center gap-8">
             <h1 className="text-4xl font-zilla font-bold text-orange-600">
               The Vision Quest Learning Hub
