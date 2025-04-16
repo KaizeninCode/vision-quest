@@ -128,13 +128,13 @@ const ServicesPage = () => {
               at a cost.
             </p>
           </div>
-          <div className="bg-[url(/vq/2.png)] bg-cover bg-center rounded-lg max-lg:h-96" />
+          <div className="bg-[url(/vq/anywhare.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
         </div>
       </section>
       {/* second service */}
       <section className="p-8 flex-1">
         <div className="grid lg:grid-cols-2 gap-8 h-fit">
-          <div className="bg-[url(/vq/3.png)] bg-cover bg-center rounded-lg max-lg:h-96" />
+          <div className="bg-[url(/vq/transforming-communities.jpg)] bg-cover bg-center rounded-lg max-lg:h-96" />
           <div className="flex flex-col justify-center gap-8">
             <h1 className="text-4xl font-zilla font-bold text-orange-600">
               The Vision Quest Learning Hub
@@ -184,7 +184,7 @@ const ServicesPage = () => {
               </ul>
             </p>
           </div>
-          <div className="bg-[url(/vq/9.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
+          <div className="bg-[url(/vq/this-too.jpg)] bg-cover bg-center rounded-lg max-lg:hidden" />
         </div>
       </section>
       {/* value proposition */}
