@@ -131,40 +131,6 @@ const AboutPage = () => {
           <div className="bg-[url(/vq/7.png)] bg-cover bg-center rounded-lg max-md:hidden" />
         </div>
       </section>
-      {/* Achievements */}
-      <section className="lg:my-24 my-8 p-8 flex-1">
-        <div className="grid lg:grid-cols-2 lg:gap-16 gap-4">
-          <h1 className="lg:text-6xl text-2xl font-bold font-zilla text-orange-600">
-            Our Achievements in the Global South
-          </h1>
-          <div className="grid gap-12">
-            <p className="lg:text-lg font-vietnam">
-              At Vision Quest Consultants, we pride ourselves on delivering
-              measurable results. Our evidence-based strategies have transformed
-              communities and enhanced capacities across the region.
-            </p>
-            <div className="grid grid-cols-2">
-              <div className="grid">
-                <h1 className="lg:text-5xl text-3xl font-bold font-zilla mb-2 text-orange-600">
-                  75%
-                </h1>
-                <p className="lg:text-lg text-sm font-vietnam">
-                  of projects successfully met or exceeded their objectives.
-                </p>
-              </div>
-              <div className="grid">
-                <h1 className="lg:text-5xl text-3xl font-bold font-zilla mb-2 text-orange-600">
-                  100%
-                </h1>
-                <p className="lg:text-lg text-sm font-vietnam">
-                  client satisfaction rate in our recent evaluations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ScrollingLogos />
-      </section>
       {/* Get in Touch */}
       <section className="lg:p-16 p-4 flex-1 grid lg:grid-cols-2 lg:gap-48 gap-4">
         <div className="space-y-8">
